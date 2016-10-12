@@ -9,6 +9,21 @@ p {margin:0;}
 
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .flex {display:-webkit-box; display:-webkit-flex; display:-ms-flex; display:flex;}
+.flex.vertical {flex-direction:column;}
+/*
+        <section class="list">
+            <a class="link tistory" href="http://blog.opnay.com"><img class="icon" src="./image/tistory.svg" alt="Tistory" /> 티스토리 블로그</a>
+            <a class="link" href="#"><img class="icon" src="./image/application.svg" alt="Application" /> 애플리케이션(준비중..)</a>
+        </section>
+*/
+
+.link {color:#212121; text-decoration:none; padding:16px;}
+.link:hover {background:#EEE;}
+
+.list {width:320px}
+.icon {margin-right:8px; width:64px; height:auto; vertical-align:middle;}
+
+/*
 
 .icons {
 	position:absolute; top:0; right:0; bottom:0; left:0;
@@ -36,3 +51,5 @@ p {margin:0;}
 	.icons .icons-element {margin:64px; width:calc(100% - 128px);}
 	.icons .icons-info {font-size:24px;}
 }
+
+*/
