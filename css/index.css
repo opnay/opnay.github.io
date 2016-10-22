@@ -12,46 +12,11 @@ p {margin:0;}
 .flex {display:-webkit-box; display:-webkit-flex; display:-ms-flex; display:flex;}
 .flex.center {align-items:center; justify-content:center;}
 .flex.vertical {flex-direction:column;}
-/*
-        <section class="list">
-            <a class="link tistory" href="http://blog.opnay.com"><img class="icon" src="./image/tistory.svg" alt="Tistory" /> 티스토리 블로그</a>
-            <a class="link" href="#"><img class="icon" src="./image/application.svg" alt="Application" /> 애플리케이션(준비중..)</a>
-        </section>
-*/
 
 .link {color:#212121; text-decoration:none; padding:16px;}
 .link:hover {background:#EEE;}
 
+.content {width:100%; height:100%;}
+
 .list {width:320px}
 .icon {margin-right:8px; width:64px; height:auto; vertical-align:middle;}
-
-/*
-
-.icons {
-	position:absolute; top:0; right:0; bottom:0; left:0;
-	align-items:center; justify-content:center;
-
-}
-.icons .icons-element {position:relative; display:block; border-radius:50%; overflow:hidden; color:white;}
-.icons .icons-element .icons-img:after {content:""; position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
-.icons .icons-element:hover .icons-img:after {background:rgba(0,0,0,0.5);}
-
-.icons .icons-element .icons-info {
-	position:absolute; top:0; right:0; bottom:0; left:0;
-	vertical-align:middle; align-items:center; justify-content:center;
-	opacity:0;
-}
-.icons .icons-element:hover .icons-info {opacity:1;}
-.icons .icons-info {font-weight:bold; font-size:32px;}
-
-@media screen and (min-width:900px) {
-	.icons-element ~ .icons-element {margin-left:64px;}
-	.icons .icons-element, .icons .icons-img {width:400px; height:400px;}
-}
-@media screen and (max-width:900px) {
-	.icons {flex-direction:column;}
-	.icons .icons-element {margin:64px; width:calc(100% - 128px);}
-	.icons .icons-info {font-size:24px;}
-}
-
-*/
