@@ -3,6 +3,20 @@ layout: default
 ---
 
 <section class="list flex vertical">
+	<div class="dday progress">
+			<div class="progress-bar"></div>
+			<p class="progress-text"></p>
+	</div>
 	<a class="link tistory" href="http://blog.opnay.com"><img class="icon" src="./image/tistory.svg" alt="Tistory" /> 티스토리 블로그</a>
 	<a class="link" href="#"><img class="icon" src="./image/application.svg" alt="Application" /> 애플리케이션(준비중..)</a>
 </section>
+<script type="text/javascript" src="js/dday.js"></script>
+<style>
+.dday.progress {position:relative; margin:18px; width:calc(100% - 36px); height:28px;}
+.dday.progress .progress-bar {width:0%; height:100%; transition:width 500ms ease-out;}
+.dday.progress .progress-text {margin:-28px 0 0 0; width:100%; line-height:1.75; color:white; text-align:center; font-weight:bold;}
+
+.progress {background:#BBDEFB;}
+.progress .progress-bar {background:#2196F3;}
+
+</style>
