@@ -1,12 +1,6 @@
 @charset "utf-8";
 
-html {height:100%;}
-body {
-	margin:0; padding:0; min-height:100%;
-	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
-}
-p {margin:0;}
+html, body {margin:0; padding:0;}
 a {text-decoration:none;}
 
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
