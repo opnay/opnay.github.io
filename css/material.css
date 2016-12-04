@@ -24,7 +24,7 @@ li {line-height:1.5;}
 
 hr {border:0; border-top:1px solid rgba(0,0,0,0.12);}
 
-fieldset {border:0;}
+fieldset {margin:0; padding:0; border:0;}
 
 table {border-spacing:0;}
 th, td {padding:6px 12px;}
