@@ -7,15 +7,19 @@ layout: default
 				<div class="progress-bar"></div>
 				<p class="progress-text"></p>
 		</div>
+		<hr>
 		<a class="link tistory" href="http://blog.opnay.com"><img class="icon" src="./image/tistory.svg" alt="Tistory" /> 티스토리 블로그</a>
 		<a class="link" href="#"><img class="icon" src="./image/application.svg" alt="Application" /> 애플리케이션(준비중..)</a>
 	</section>
 </section>
 <script type="text/javascript" src="js/dday.js"></script>
 <style>
-.wrapper {position:absolute; top:0; bottom:0; width:100%;}
+.wrapper {background:#EEE; position:absolute; top:0; bottom:0; width:100%;}
+.wrapper hr {margin:0;}
 .wrapper .link {color:#212121; text-decoration:none; padding:16px;}
 .wrapper .link:hover {background:#EEE;}
+
+.list {background:#FFF; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 
 .dday.progress {position:relative; margin:18px; width:calc(100% - 36px); height:28px;}
 .dday.progress .progress-bar {width:0%; height:100%; transition:width 500ms ease-out;}
