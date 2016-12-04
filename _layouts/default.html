@@ -9,6 +9,7 @@
 
 		<!--<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" />-->
 		<link rel="stylesheet" href="fonts/notosanskr.css">
+		<link rel="stylesheet" href="fonts/materialicons.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
 		<!-- Verification -->
@@ -23,9 +24,11 @@
 		ga('create', 'UA-68430622-3', 'auto');
 		ga('send', 'pageview');
 		</script>
-
 	</head>
-	<body class="flex center">
-		{{ content }}
+	<body>
+		<nav class="nav">
+			<span class="title anim-transform"><a class="link ellipsis" href="/">OPNay</a></span>
+		</nav>
+		<div class="content">{{ content }}</div>
 	</body>
 </html>
