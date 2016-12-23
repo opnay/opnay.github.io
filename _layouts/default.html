@@ -25,12 +25,26 @@
 		ga('create', 'UA-68430622-3', 'auto');
 		ga('send', 'pageview');
 		</script>
+
+		<!-- Addon -->
+		<script type="text/javascript" src="/js/dday.js"></script>
 	</head>
 	<body>
 		<nav class="nav">
 			<span class="title anim-transform"><a class="link ellipsis" href="/">OPNay</a></span>
 		</nav>
 		<aside class="side">
+			<div class="title item hr"><a class="link">OPNay</a></div>
+			<div class="dday">
+				<div class="progress">
+					<div class="progress-bar"></div>
+					<p class="progress-text"></p>
+				</div>
+				<div class="info">
+					<p>군 복무 기간 : 2015.12.08 ~ 2017.12.07</p>
+					<p>제대일까지 : <span class="dday-text"></span></p>
+				</div>
+			</div>
 		</aside>
 		<div class="content">{{ content }}</div>
 	</body>
