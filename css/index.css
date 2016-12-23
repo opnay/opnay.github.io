@@ -8,9 +8,9 @@ html, body {margin:0; padding:0;}
 .flex.vertical {flex-direction:column;}
 
 /* Top Nav */
-.nav {z-index:100; background:#2196F3; height:50px; width:100%; top:0; left:0; position:fixed; overflow:hidden; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
+.nav {z-index:100; background:#2196F3; height:64px; width:100%; top:0; left:0; position:fixed; overflow:hidden; box-shadow:0 2px 4px 0 rgba(0,0,0,0.3);}
 .nav .title {
-	display:block; margin:0 24px; line-height:50px; font-size:24px;
+	display:block; margin:0 24px; line-height:64px; font-size:24px;
 	-webkit-transform:translateY(0);
 	transform:translateY(0);
 }
