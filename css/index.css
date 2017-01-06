@@ -41,10 +41,3 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 
 /* Content */
 .content {overflow-x:hidden; overflow-y:auto;}
-
-.list {width:640px}
-.icon {margin-right:8px; width:64px; height:auto; vertical-align:middle;}
-
-@media screen and (max-width:640px) {
-	.list { width:100%;}
-}
