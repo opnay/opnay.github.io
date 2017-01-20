@@ -25,7 +25,7 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .side {z-index:120; background:#FFF; overflow-x:hidden; overflow-y:auto; width:320px; border-right:1px solid rgba(0,0,0,0.12);}
 .tablet .side {position:fixed; top:0; bottom:0; box-shadow:0 0 16px rgba(0,0,0,0.3);}
 .side .hr {border:none; border-bottom:1px solid rgba(0,0,0,0.12); box-sizing:border-box;}
-.side .item {display:block; padding:0 12px; height:48px; line-height:48px; font-size:16px;}
+.side .item {display:block; padding:0 12px;}
 
 .side .title {height:64px; line-height:64px; font-size:24px;}
 /* Content */
