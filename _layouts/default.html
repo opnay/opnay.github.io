@@ -41,14 +41,19 @@
 	</head>
 	<body class="desktop">
 		<aside class="side">
-			<div class="title item hr"><a class="link">OPNay</a></div>
+			<div class="title item hr">
+				<a class="link ellipsis" href="/">
+					<p><img class="profile" src="/user.jpg" width="128px" height="128px"></p>
+					<a class="link ellipsis" href="/"><p>OPNay</p></a>
+					<p>
+						<a class="link ext" href="https://facebook.com/opnay">{% include ico_facebook.svg %}</a>
+						<a class="link ext" href="https://twitter.com/opnay">{% include ico_twitter.svg %}</a>
+						<a class="link ext" href="https://github.com/opnay">{% include ico_github.svg %}</a>
+					</p>
+				</a>
+			</div>
 			{% include dday.html %}
 		</aside>
-		<div class="wrap flex vertical">
-			<nav class="nav">
-				<span class="title anim-transform"><a class="link ellipsis" href="/">OPNay</a></span>
-			</nav>
-			<div class="content flex-1">{{ content }}</div>
-		</div>
+		<div class="wrap">{{ content }}</div>
 	</body>
 </html>
