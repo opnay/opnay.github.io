@@ -25,4 +25,4 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .side .title .ext svg {width:24px; height:24px;}
 
 /* Content Wrap */
-.wrap {overflow-x:hidden; overflow-y:auto;}
+.wrap {background:#EEE; overflow-x:hidden; overflow-y:auto;}
