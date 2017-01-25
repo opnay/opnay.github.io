@@ -26,7 +26,7 @@
 		<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
 		{% include verification.html %}
 	</head>
-	<body class="desktop">
+	<body class="desktop flex">
 		<aside class="side animate">
 			<div class="title item hr">
 				<p><img class="profile" src="/image/profile.jpg"></p>
@@ -50,7 +50,12 @@
 				</style>
 			</div>
 		</aside>
-		<div class="wrap">{{ content }}</div>
+		<div class="wrap flex-1">
+			<nav class="nav">
+				<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
+			</nav>
+			<div class="content">{{ content }}</div>
+		</div>
 		<script>
 			(function ($) {
 				$body = $('body'), $win = $(window);
