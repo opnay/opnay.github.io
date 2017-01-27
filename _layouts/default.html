@@ -28,6 +28,9 @@
 	</head>
 	<body class="desktop flex">
 		<aside class="side animate">
+			<div class="close">
+				<a class="button" href="#">{% include icon/close.svg %}</a>
+			</div>
 			<div class="title item hr">
 				<p><img class="profile" src="/image/profile.jpg"></p>
 				<p><a class="link ellipsis" href="/">OPNay</a></p>
@@ -53,6 +56,15 @@
 		<div class="wrap flex-1">
 			<nav class="nav animate">
 				<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
+				<script>
+					(function ($) {
+						$button = $('.nav .menu .button, .side .close .button'), $side = $('.side'), activeNav = function (a) {
+							$side.toggleClass('active', a);
+							$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
+						};
+						$button.click(function () {activeNav(!$side.hasClass('active'));});
+					})(jQuery);
+				</script>
 			</nav>
 			<div class="content">{{ content }}</div>
 		</div>
@@ -63,6 +75,7 @@
 					if (($win.width() >= 1024) && !$body.hasClass('desktop')) {
 						console.log('Change Window size to Desktop');
 						$body.addClass('desktop').removeClass('tablet mobile');
+						$side.hasClass('active') ? activeNav(false) : console.log("Already deactive");
 					} else if (($win.width() >= 768) && ($win.width() < 1024) && !$body.hasClass('tablet')) {
 						console.log('Change Window size to Tablet');
 						$body.addClass('tablet').removeClass('desktop mobile');

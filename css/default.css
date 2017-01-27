@@ -8,6 +8,8 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .flex.vertical {flex-direction:column;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
 .animate {transition:transform 200ms;}
+.button {display:block; padding:6px; width:36px; height:36px; box-sizing:border-box;}
+.button svg {fill:white; width:24px; height:24px;}
 
 /* Side */
 .side {z-index:120; background:#FFF; overflow-x:hidden; overflow-y:auto; width:320px;}
@@ -16,8 +18,13 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .mobile .side {width:100%;}
 .tablet .side.active, .mobile .side.active {transform:translateX(0);}
 
+.cover {z-index:110; background:rgba(0,0,0,0.1); position:fixed; width:100%; height:100%;}
+
 .side .hr {border:none; border-bottom:1px solid rgba(0,0,0,0.12); box-sizing:border-box;}
 .side .item {display:block; padding:0 12px;}
+
+.side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
+.desktop .side .close {display:none;}
 
 .side .title {background:#2196F3; padding:16px; text-align:center; font-size:32px;}
 .side .title .link {color:white;}
@@ -32,8 +39,6 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .nav {position:fixed; top:0; background:#2196F3; width:100%; height:64px;}
 .desktop .nav {transform:translateY(-100%);}
 .nav .menu {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
-.nav .menu .button {display:block; padding:6px; width:36px; height:36px; box-sizing:border-box;}
-.nav .menu .button svg {fill:white; width:24px; height:24px;}
 
 .content {padding-top:64px;}
 .desktop .content {padding-top:0;}
