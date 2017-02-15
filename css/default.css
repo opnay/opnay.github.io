@@ -20,9 +20,6 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 
 .cover {z-index:110; background:rgba(0,0,0,0.1); position:fixed; width:100%; height:100%;}
 
-.side .hr {border:none; border-bottom:1px solid rgba(0,0,0,0.12); box-sizing:border-box;}
-.side .item {display:block; padding:0 12px;}
-
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
 .desktop .side .close {display:none;}
 
