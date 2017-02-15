@@ -33,6 +33,13 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .side .title .ext:hover {fill:rgba(255,255,255,.75);}
 .side .title .ext svg {width:24px; height:24px;}
 
+.list {width:100%}
+.list .link {color:#212121; text-decoration:none; padding:8px;}
+.list .link:hover {background:#EEE;}
+.icon {padding:8px; width:24px; height:auto; vertical-align:middle;}
+.mobile .list {font-size:18px}
+.mobile .icon {width:32px; height:32px;}
+
 /* Content Wrap */
 .wrap {background:#EEE; overflow-x:hidden; overflow-y:auto;}
 
