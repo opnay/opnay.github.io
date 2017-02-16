@@ -26,9 +26,9 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .side .profile {background:#2196F3; padding:32px; text-align:center; font-size:32px;}
 .side .profile .link {color:white;}
 .side .profile .img {border-radius:50%; width:128px; height:auto;}
-.side .profile .ext {display:inline-block; width:32px; height:32px; fill:white; line-height:1;}
-.side .profile .ext:hover {fill:rgba(255,255,255,.75);}
-.side .profile .ext svg {width:24px; height:24px;}
+.side .profile .social {display:inline-block; width:32px; height:32px; fill:white; line-height:1;}
+.side .profile .social:hover {fill:rgba(255,255,255,.75);}
+.side .profile .social svg {width:24px; height:24px;}
 
 .side .list .link {text-decoration:none; padding:8px;}
 .side .list .link:hover {background:#EEE;}

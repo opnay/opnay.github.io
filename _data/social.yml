@@ -1,0 +1,15 @@
+- name: Facebook
+  href: https://facebook.com/opnay
+  icon: facebook.svg
+
+- name: Twitter
+  href: https://twitter.com/opnay_dev
+  icon: twitter.svg
+
+- name: Google Plus
+  href: https://plus.google.com/107296541638373404997
+  icon: googleplus.svg
+
+- name: Github
+  href: https://github.com/opnay
+  icon: github.svg

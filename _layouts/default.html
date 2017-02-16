@@ -35,9 +35,9 @@
 				<p><img class="img" src="/image/profile.jpg"></p>
 				<p><a class="link ellipsis" href="/">OPNay</a></p>
 				<p>
-					<a class="link ext" href="https://facebook.com/opnay">{% include icon/facebook.svg %}</a>
-					<a class="link ext" href="https://twitter.com/opnay_dev">{% include icon/twitter.svg %}</a>
-					<a class="link ext" href="https://github.com/opnay">{% include icon/github.svg %}</a>
+					{% for social in site.data.social %}
+					<a class="link social" href="{{ social.href }}">{% include icon/{{social.icon}} %}</a>
+					{% endfor %}
 				</p>
 			</div>
 			<div class="list flex vertical">
