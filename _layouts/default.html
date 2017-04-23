@@ -41,8 +41,12 @@
 				</p>
 			</div>
 			<div class="list flex vertical">
-				<a class="link" href="http://blog.opnay.com"><img class="icon" src="./image/tistory.svg" alt="Tistory" /><span class="title">블로그</span></a>
-				<a class="link" href="#"><img class="icon" src="./image/application.svg" alt="Application" /><span class="title">애플리케이션(준비중)</span></a>
+				{% for menu in site.data.side_menu %}
+				<a class="link" href="{{ menu.href }}">
+					<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
+					<span class="title">{{ menu.name }}</span>
+				</a>
+				{% endfor %}
 			</div>
 		</aside>
 		<div class="wrap flex-1">
