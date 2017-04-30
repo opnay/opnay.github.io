@@ -3,5 +3,5 @@
   icon: /image/tistory.svg
 
 - name: '애플리케이션 (준비중)'
-  href: '#'
+  href: '/app/'
   icon: /image/application.svg
