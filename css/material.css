@@ -4,11 +4,13 @@
  * Secondary Text - #000 54%
  * Disabled Text - #000 38%
  */
-html, label, button, input, textarea, blockquote, pre, code {
+html {
 	color:rgba(0,0,0,0.87);
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
+	font-size:100%;
 }
+label, button, input, textarea, blockquote, pre, code {font:inherit;}
 
 h1, h2, h3, h4, h5, h6 {margin:0; font-weight:normal;}
 h1 {margin:36px 0 12px 0; font-size:42px;}
