@@ -34,4 +34,6 @@ table {border-spacing:0;}
 th, td {padding:6px 12px;}
 th {background:#EEE;}
 
-blockquote, pre, code {background:#F5F5F5; margin:0 0 16px; padding:16px;}
+blockquote {background:rgba(0,0,0,0.1); margin:12px 24px; padding:16px;}
+code {background:rgba(0,0,0,0.1); margin:0 2px; padding:2px 6px; font-size:0.9em;}
+pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
