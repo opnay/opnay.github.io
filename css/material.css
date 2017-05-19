@@ -21,6 +21,7 @@ h3 {margin:24px 0 12px 0;font-size:28px;}
 h4, h5, h6 {margin:24px 0 12px 0; font-size:16px;}
 
 a {color:#03A9F4; text-decoration:none;}
+a:hover {text-decoration:underline;}
 p {margin:0;}
 
 ol, ul {padding-left:32px;}
