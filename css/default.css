@@ -3,26 +3,12 @@
 /* Theme color set */
 .bg-primary {background:#2196F3;}
 
-/* Global class */
-html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
-
-.ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-.flex {display:-webkit-box; display:-webkit-flex; display:-ms-flex; display:flex;}
-.flex.center {align-items:center; justify-content:center;}
-.flex.vertical {flex-direction:column;}
-.flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
-.animate {transition:transform 200ms;}
-.button {display:block; padding:6px; width:36px; height:36px;}
-.button svg {fill:white; width:24px; height:24px;}
-
 /* Side */
 .side {z-index:120; background:#FFF; overflow-x:hidden; overflow-y:auto; width:320px;}
 .desktop .side {border-right:1px solid rgba(0,0,0,0.12);}
 .tablet .side, .mobile .side {position:fixed; top:0; bottom:0; box-shadow:0 0 16px rgba(0,0,0,0.3); transform:translateX(-100%);}
 .mobile .side {width:100%;}
 .tablet .side.active, .mobile .side.active {transform:translateX(0);}
-
-.cover {z-index:110; background:rgba(0,0,0,0.1); position:fixed; width:100%; height:100%;}
 
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px;}
 .desktop .side .close {display:none;}
