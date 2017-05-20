@@ -43,7 +43,6 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .mobile .side .list .icon {width:32px; height:32px;}
 
 /* Content Wrap */
-.nav {position:fixed; top:0; width:100%; height:64px;}
 .desktop .nav {transform:translateY(-100%);}
 .nav .menu {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px; box-sizing:border-box;}
 
