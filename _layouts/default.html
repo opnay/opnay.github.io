@@ -1,97 +1,50 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<title>OPNay's Lab</title>
-		<!-- favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/image/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="/image/favicons/192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/image/favicons/32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/image/favicons/16.png" sizes="16x16">
-		<link rel="manifest" href="/image/favicons/manifest.json">
-		<link rel="mask-icon" href="/image/favicons/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/image/favicons/favicon.ico">
-		<meta name="msapplication-config" content="/image/favicons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
-		
-		<link rel="stylesheet" href="/css/default.css">
-		<link rel="stylesheet" href="/css/material.css">
-
-		<link rel="stylesheet" href="/fonts/notosanskr.css">
-		<link rel="stylesheet" href="/fonts/materialicons.css">
-		<link rel="stylesheet" href="/fonts/roboto.css">
-
-		<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
-		{% include verification.html %}
-	</head>
-	<body class="desktop flex">
-		<aside class="side animate">
-			<div class="close">
-				<a class="button" href="#">{% include icon/arrow-left.svg %}</a>
-			</div>
-			<div class="profile bg-primary">
-				<p><img class="img" src="/image/profile.jpg"></p>
-				<p><a class="link ellipsis" href="/">OPNay</a></p>
-				<p>
-					{% for social in site.data.social %}
-					<a class="link social" href="{{ social.href }}">{% include icon/{{social.icon}} %}</a>
-					{% endfor %}
-				</p>
-			</div>
-			<div class="list flex vertical">
-				{% for menu in site.data.side_menu %}
-				<a class="link" href="{{ menu.href }}">
-					<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
-					<span class="title">{{ menu.name }}</span>
-				</a>
-				{% endfor %}
-			</div>
-		</aside>
-		<div class="wrap bg-gray flex-1">
-			<nav class="nav bg-primary animate">
-				<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
-				<script>
-					(function ($) {
-						$button = $('.nav .menu .button, .side .close .button'), $side = $('.side'), activeNav = function (a) {
-							$side.toggleClass('active', a);
-							$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
-						};
-						$button.click(function () {activeNav(!$side.hasClass('active'));});
-					})(jQuery);
-				</script>
-			</nav>
-			<div class="content">{{ content }}</div>
-			<script>
-				(function ($) {
-					$('.content').scroll(function () {
-						if (this.scrollTop > 0 && !$('.nav').hasClass('shadow'))
-							$('.nav').toggleClass('shadow',true);
-						else if (this.scrollTop == 0)
-							$('.nav').toggleClass('shadow',false)
-					});
-				})(jQuery);
-			</script>
-		</div>
+---
+layout: "base"
+---
+<aside class="side animate">
+	<div class="close">
+		<a class="button" href="#">{% include icon/arrow-left.svg %}</a>
+	</div>
+	<div class="profile bg-primary">
+		<p><img class="img" src="/image/profile.jpg"></p>
+		<p><a class="link ellipsis" href="/">OPNay</a></p>
+		<p>
+			{% for social in site.data.social %}
+			<a class="link social" href="{{ social.href }}">{% include icon/{{social.icon}} %}</a>
+			{% endfor %}
+		</p>
+	</div>
+	<div class="list flex vertical">
+		{% for menu in site.data.side_menu %}
+		<a class="link" href="{{ menu.href }}">
+			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
+			<span class="title">{{ menu.name }}</span>
+		</a>
+		{% endfor %}
+	</div>
+</aside>
+<div class="wrap bg-gray flex-1">
+	<nav class="nav bg-primary animate">
+		<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
 		<script>
 			(function ($) {
-				$body = $('body'), $win = $(window);
-				function chkWindow() {
-					if (($win.width() >= 1024) && !$body.hasClass('desktop')) {
-						console.log('Change Window size to Desktop');
-						$body.addClass('desktop').removeClass('tablet mobile');
-						$side.hasClass('active') ? activeNav(false) : console.log("Already deactive");
-					} else if (($win.width() >= 768) && ($win.width() < 1024) && !$body.hasClass('tablet')) {
-						console.log('Change Window size to Tablet');
-						$body.addClass('tablet').removeClass('desktop mobile');
-					} else if (($win.width() < 768) && !$body.hasClass('mobile')) {
-						console.log('Change Window size to Mobile');
-						$body.addClass('mobile').removeClass('desktop tablet');
-					}
+				$button = $('.nav .menu .button, .side .close .button'), $side = $('.side'), activeNav = function (a) {
+					$side.toggleClass('active', a);
+					$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
 				};
-				$win.resize(chkWindow), chkWindow();
+				$button.click(function () {activeNav(!$side.hasClass('active'));});
 			})(jQuery);
 		</script>
-	</body>
-</html>
+	</nav>
+	<div class="content">{{ content }}</div>
+	<script>
+		(function ($) {
+			$('.content').scroll(function () {
+				if (this.scrollTop > 0 && !$('.nav').hasClass('shadow'))
+					$('.nav').toggleClass('shadow',true);
+				else if (this.scrollTop == 0)
+					$('.nav').toggleClass('shadow',false)
+			});
+		})(jQuery);
+	</script>
+</div>
