@@ -46,8 +46,8 @@ html, body, .wrap {margin:0; padding:0; width:100%; height:100%;}
 .desktop .nav {transform:translateY(-100%);}
 .nav .menu {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px;}
 
-.content {padding-top:64px; height:100%; overflow-x:hidden; overflow-y:auto;}
-.desktop .content {padding-top:0;}
+.content {height:calc(100% - 64px); overflow-x:hidden; overflow-y:auto;}
+.desktop .content {height:100%;}
 
 .desktop .card, .tablet .card {margin:18px auto; width:640px;}
 .mobile .card {width:100%;}

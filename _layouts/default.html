@@ -63,6 +63,16 @@
 				</script>
 			</nav>
 			<div class="content">{{ content }}</div>
+			<script>
+				(function ($) {
+					$('.content').scroll(function () {
+						if (this.scrollTop > 0 && !$('.nav').hasClass('shadow'))
+							$('.nav').toggleClass('shadow',true);
+						else if (this.scrollTop == 0)
+							$('.nav').toggleClass('shadow',false)
+					});
+				})(jQuery);
+			</script>
 		</div>
 		<script>
 			(function ($) {
