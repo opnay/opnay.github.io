@@ -24,8 +24,11 @@ layout: "base"
 	</div>
 </aside>
 <div class="wrap bg-gray flex-1">
-	<nav class="nav bg-p animate">
-		<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
+	<nav class="nav">
+		<div class="top flex animate bg-p">
+			<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
+			<div class="title flex-1">{{ page.title }}</div>
+		</div>
 	</nav>
 	<div class="content">{{ content }}</div>
 	<script>

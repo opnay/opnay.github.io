@@ -26,8 +26,7 @@
 .mobile .side .list .icon {width:32px; height:32px;}
 
 /* Content Wrap */
-.desktop .nav {transform:translateY(-100%);}
-.nav .menu {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px;}
+.desktop .nav .top {transform:translateY(-100%);}
 
 .content {height:100%; overflow-x:hidden; overflow-y:auto;}
 .tablet .content, .mobile .content {margin-top:64px; height:calc(100% - 64px);}
