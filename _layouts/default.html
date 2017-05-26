@@ -5,7 +5,7 @@ layout: "base"
 	<div class="close">
 		<a class="button" href="#">{% include icon/arrow-left.svg %}</a>
 	</div>
-	<div class="profile bg-primary">
+	<div class="profile bg-p">
 		<p><img class="img" src="/image/profile.jpg"></p>
 		<p><a class="link ellipsis" href="/">OPNay</a></p>
 		<p>
@@ -24,7 +24,7 @@ layout: "base"
 	</div>
 </aside>
 <div class="wrap bg-gray flex-1">
-	<nav class="nav bg-primary animate">
+	<nav class="nav bg-p animate">
 		<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
 	</nav>
 	<div class="content">{{ content }}</div>
@@ -48,4 +48,6 @@ layout: "base"
 	</script>
 </div>
 <style>
+	.bg-p {background:{{ page.theme.primary }};}
+	.bg-s {background:{{ page.theme.secondary }};}
 </style>
