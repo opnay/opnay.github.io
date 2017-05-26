@@ -8,7 +8,7 @@ html {
 	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
 	font-size:100%;
 }
-label, button, input, textarea, blockquote, pre, code {font:inherit;}
+label, button, input, textarea, blockquote, pre, code {font-family:inherit;}
 
 article, p, li {line-height:1.5;}
 
