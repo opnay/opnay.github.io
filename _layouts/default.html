@@ -26,19 +26,18 @@ layout: "base"
 <div class="wrap bg-gray flex-1">
 	<nav class="nav bg-primary animate">
 		<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
-		<script>
-			(function ($) {
-				$button = $('.nav .menu .button, .side .close .button'), $side = $('.side'), activeNav = function (a) {
-					$side.toggleClass('active', a);
-					$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
-				};
-				$button.click(function () {activeNav(!$side.hasClass('active'));});
-			})(jQuery);
-		</script>
 	</nav>
 	<div class="content">{{ content }}</div>
 	<script>
 		(function ($) {
+			/* Side Menu */
+			$button = $('.nav .menu .button, .side .close .button'), $side = $('.side'), activeNav = function (a) {
+				$side.toggleClass('active', a);
+				$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
+			};
+			$button.click(function () {activeNav(!$side.hasClass('active'));});
+
+			/* Nav shadow anime */
 			$('.content').scroll(function () {
 				if (this.scrollTop > 0 && !$('.nav').hasClass('shadow'))
 					$('.nav').toggleClass('shadow',true);
@@ -48,3 +47,5 @@ layout: "base"
 		})(jQuery);
 	</script>
 </div>
+<style>
+</style>
