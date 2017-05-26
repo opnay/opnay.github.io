@@ -62,7 +62,7 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 /* Components */
 .card {background:white; padding:16px; border-radius:2px; box-shadow:0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);}
 
-.nav {width:100%; height:64px; transition:box-shadow linear 200ms;}
+.nav {position:fixed; top:0; left:0; width:100%; height:64px; transition:box-shadow linear 200ms;}
 .nav.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
 
 .cover {z-index:110; background:rgba(0,0,0,0.1); position:fixed; width:100%; height:100%;}
