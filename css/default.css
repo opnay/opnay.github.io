@@ -2,7 +2,7 @@
 
 /* Side */
 .side {z-index:120; background:#FFF; overflow-x:hidden; overflow-y:auto; width:320px;}
-.desktop .side {border-right:1px solid rgba(0,0,0,0.12);}
+.desktop .side {box-shadow:0 0 16px rgba(0,0,0,0.3);}
 .tablet .side, .mobile .side {position:fixed; top:0; bottom:0; transform:translateX(-100%);}
 .mobile .side {width:100%;}
 .tablet .side.active, .mobile .side.active {box-shadow:0 0 16px rgba(0,0,0,0.3); transform:translateX(0);}
