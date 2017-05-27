@@ -42,10 +42,11 @@ layout: "base"
 
 			/* Nav shadow anime */
 			$('.content').scroll(function () {
-				if (this.scrollTop > 0 && !$('.nav').hasClass('shadow'))
-					$('.nav').toggleClass('shadow',true);
+				a = $('.nav .top');
+				if (this.scrollTop > 0 && !a.hasClass('shadow'))
+					a.toggleClass('shadow',true);
 				else if (this.scrollTop == 0)
-					$('.nav').toggleClass('shadow',false)
+					a.toggleClass('shadow',false)
 			});
 		})(jQuery);
 	</script>
