@@ -12,7 +12,6 @@
 
 .side .profile {padding:24px; text-align:center; font-size:32px;}
 .side .profile p {margin:0; line-height:1.5;}
-.side .profile .link {color:white;}
 .side .profile .img {border-radius:50%; width:128px; height:auto;}
 .side .profile .social {display:inline-block; width:32px; height:32px; fill:white; line-height:1;}
 .side .profile .social:hover {fill:rgba(255,255,255,.75);}

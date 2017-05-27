@@ -3,7 +3,6 @@
 
 /* Tags */
 html {
-	color:rgba(0,0,0,0.87);
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 	font-family:Roboto,RobotoDraft,arial,'Noto Sans KR','Nanum Gothic',sans-serif;
 	font-size:100%;
@@ -45,9 +44,12 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 .bg-white {background:white;}
 
 .ft-white {color:white;}
-.ft-primary {color:rgba(0,0,0,0.87);}
-.ft-secondary {color:rgba(0,0,0,0.54);}
-.ft-disabled {color:rgba(0,0,0,0.38);}
+.ft-white-sec {color:rgba(255,255,255,0.70);}
+.ft-white-sec {color:rgba(255,255,255,0.50);}
+
+.ft-dark {color:rgba(0,0,0,0.87);}
+.ft-dark-sec {color:rgba(0,0,0,0.54);}
+.ft-dark-dis {color:rgba(0,0,0,0.38);}
 
 /* Global */
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
@@ -64,7 +66,7 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 
 .nav .top {position:fixed; top:0; left:0; padding:14px; width:100%; height:64px; transition:box-shadow linear 200ms;}
 .nav .top.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
-.nav .top .title {margin-left:14px; line-height:36px; font-size:1.4em; color:white;}
+.nav .top .title {margin-left:14px; line-height:36px; font-size:1.4em;}
 
 .nav .bottom {position:fixed; bottom:0; left:0; width:100%; height:32px;}
 

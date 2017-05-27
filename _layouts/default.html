@@ -7,7 +7,7 @@ layout: "base"
 	</div>
 	<div class="profile bg-p">
 		<p><img class="img" src="/image/profile.jpg"></p>
-		<p><a class="link ellipsis" href="/">OPNay</a></p>
+		<p><a class="link ellipsis ft-white" href="/">OPNay</a></p>
 		<p>
 			{% for social in site.data.social %}
 			<a class="link social" href="{{ social.href }}">{% include icon/{{social.icon}} %}</a>
@@ -27,7 +27,7 @@ layout: "base"
 	<nav class="nav">
 		<div class="top flex animate bg-p">
 			<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
-			<div class="title flex-1">{{ page.title }}</div>
+			<div class="title flex-1 ft-white">{{ page.title }}</div>
 		</div>
 	</nav>
 	<div class="content">{{ content }}</div>
