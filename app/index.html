@@ -5,12 +5,13 @@ theme:
     primary: "#2196F3"
     secondary: "#B3E5FC"
 ---
-<div class="card">
-	<h1 class="title">페이지가 없습니다.</h1>
-	<article>
-		<p>개발한 애플리케이션 목록 페이지이며, 본 페이지는 아직 준비중입니다.<br>빠른 시일내에 보여드리도록 하겠습니다.</p>
-	</article>
-</div>
+<a class="card ft-dark" href="/app/calculator/">
+	<div class="title">계산기<span class="category ft-dark-sec right">WebApp</span></div>
+	<p class="date ft-dark-sec">2017.06.10</p>
+	<p class="desc ft-dark-sec">HTML, CSS, jQuery로만 만들어진 간단한 계산기입니다.</p>
+</a>
 <style>
+	.card:hover {z-index:1000; text-decoration:none; box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24)}
 	.card .title {margin:0 0 16px; font-size:36px;}
+	.card .category {font-size:18px;}
 </style>
