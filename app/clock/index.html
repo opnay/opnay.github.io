@@ -1,0 +1,87 @@
+---
+layout: base
+title: "Digital Clock"
+theme:
+    primary: "#ffb300"
+    secondary: "#ff8a65"
+---
+<div class="wrap bg-gray flex-1">
+	<div class="content flex">
+		<div class="clock">
+			<span class="hour num">00</span>
+			<span class="division">:</span>
+			<span class="minutes num">00</span>
+			<span class="division">:</span>
+			<span class="seconds num">00</span>
+			<span class="period">PM</span>
+		</div>
+		<a class="src" href="https://unsplash.com/?photo=ndN00KmbJ1c">Photo by Adam Kool</a>
+	</div>
+	<script>
+		(function ($) {
+			/* Side Menu */
+			$button = $('.nav .menu .button, .side .close .button'), $side = $('.side'), activeNav = function (a) {
+				$side.toggleClass('active', a);
+				$side.hasClass('active') ? (function () {$side.after("<div class=\"cover\"></div>"), $('.cover').click(activeNav);})() : $('.cover').remove();
+			};
+			$button.click(function () {activeNav(!$side.hasClass('active'));});
+
+			/* Nav shadow anime */
+			$('.content').scroll(function () {
+				if (this.scrollTop > 0 && !$('.nav').hasClass('shadow'))
+					$('.nav').toggleClass('shadow',true);
+				else if (this.scrollTop == 0)
+					$('.nav').toggleClass('shadow',false)
+			});
+		})(jQuery);
+	</script>
+</div>
+<script language="JavaScript">
+	(function ($) {
+		let hour = document.getElementsByClassName('hour')[0];
+		let minutes = document.getElementsByClassName('minutes')[0];
+		let seconds = document.getElementsByClassName('seconds')[0];
+		let period = document.getElementsByClassName('period')[0];
+		
+		function nNum(n, s) {
+			let str = n.toString();
+			if (str.length < s) {
+				str = '0'.repeat(s - str.length) + str;
+			}
+			return str;
+		}
+
+		function setTime(h, m, s, p) {
+			hour.innerHTML = h;
+			minutes.innerHTML = m;
+			seconds.innerHTML = s;
+			period.innerHTML = p;
+		}
+
+		function updateClock() {
+			// clock 객체 생성
+			let now = new Date(),
+				hour = nNum(now.getHours(),2),
+				min = nNum(now.getMinutes(), 2),
+				sec = nNum(now.getSeconds(), 2);
+
+			setTime(hour % 12, min, sec, hour >= 12 ? 'PM' : 'AM');
+
+			// 1초마다 함수 호출
+			let nextTick = 1000 - (now.getTime() % 1000);
+			setTimeout(updateClock, nextTick);
+		}
+		
+		updateClock();
+	})(jQuery);
+	
+</script>
+<style>
+	.wrap {background:url('./image/image.jpg'); background-size:cover; background-repeat:no-repeat;}
+	.content {background:rgba(0,0,0,0.24); position:relative; justify-content:center; align-items:center;}
+	.clock{position:relative; font-size:8em; color:white; text-shadow:4px 4px 8px rgba(0,0,0,0.48);}
+	.num {margin:0 8px;}
+	.period {font-size:0.5em;}
+	
+	.src {position:absolute; bottom:0; left:0; margin:32px; color:white; font-size:0.9em;}
+</style>
