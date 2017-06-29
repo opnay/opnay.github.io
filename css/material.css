@@ -47,9 +47,9 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 .ft-white-sec {color:rgba(255,255,255,0.70);}
 .ft-white-sec {color:rgba(255,255,255,0.50);}
 
-.ft-dark {color:rgba(0,0,0,0.87);}
-.ft-dark-sec {color:rgba(0,0,0,0.54);}
-.ft-dark-dis {color:rgba(0,0,0,0.38);}
+.ft-black {color:rgba(0,0,0,0.87);}
+.ft-black-sec {color:rgba(0,0,0,0.54);}
+.ft-black-dis {color:rgba(0,0,0,0.38);}
 
 /* Global */
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
