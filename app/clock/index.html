@@ -5,53 +5,40 @@ theme:
     primary: "#ffb300"
 ---
 <!DOCTYPE html>
-<html class="ft-dark">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<title>{{ page.title }}</title>
-
-		<!-- favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/image/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="/image/favicons/192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/image/favicons/32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/image/favicons/16.png" sizes="16x16">
-		<link rel="manifest" href="/image/favicons/manifest.json">
-		<link rel="mask-icon" href="/image/favicons/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/image/favicons/favicon.ico">
-		<meta name="msapplication-config" content="/image/favicons/browserconfig.xml">
-		<meta name="theme-color" content="{{ page.theme.primary }}">
-
-		<link rel="stylesheet" href="/css/default.css">
-		<link rel="stylesheet" href="/css/material.css">
-
+		{% include html/head.html %}
 		<link rel="stylesheet" href="/fonts/roboto.css">
 
 		<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
 		{% include verification.html %}
-	</head>
-	<body class="wrap">
-		<div class="content flex">
-			<div class="clock">
-				<span class="hour num">00</span>
-				<span class="division">:</span>
-				<span class="minutes num">00</span>
-				<span class="division">:</span>
-				<span class="seconds num">00</span>
-				<span class="period">PM</span>
-			</div>
-			<a class="src" href="https://unsplash.com/?photo=ndN00KmbJ1c">Photo by Adam Kool</a>
-		</div>
-		<script type="text/javascript" async src="./js/clock.js"></script>
+		
 		<style>
-			.wrap {background:url('./image/image.jpg'); background-size:cover; background-repeat:no-repeat;}
-			.content {background:rgba(0,0,0,0.24); position:relative; justify-content:center; align-items:center;}
-			.clock{position:relative; font-size:8em; color:white; text-shadow:4px 4px 8px rgba(0,0,0,0.48);}
-			.num {margin:0 8px;}
-			.period {font-size:0.5em;}
+.flex {display:-webkit-box; display:-webkit-flex; display:-ms-flex; display:flex;}
+.flex.center {justify-content:center; align-items:center;}
 
-			.src {position:absolute; bottom:0; left:0; margin:32px; color:white; font-size:0.9em;}
+html, body, .content {margin:0; padding:0; width:100%; height:100%; font-family:"roboto", "arial";}
+.body {background:url('./image/image.jpg'); background-size:cover; background-repeat:no-repeat;}
+.body:before {content:''; background:rgba(0,0,0,0.24); position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
+
+.clock{position:relative; font-size:8em; color:white; text-shadow:4px 4px 8px rgba(0,0,0,0.48);}
+.num {margin:0 8px;}
+.period {font-size:0.5em;}
+
+.src {position:absolute; bottom:1em; left:1em; color:white; font-size:0.9em; text-decoration:none;}
+.src:hover {text-decoration:underline;}
 		</style>
+	</head>
+	<body class="body flex center">
+		<div class="clock">
+			<span class="hour num">00</span>
+			<span class="division">:</span>
+			<span class="minutes num">00</span>
+			<span class="division">:</span>
+			<span class="seconds num">00</span>
+			<span class="period">PM</span>
+		</div>
+		<a class="src" href="https://unsplash.com/?photo=ndN00KmbJ1c">Photo by Adam Kool</a>
+		<script type="text/javascript" async src="./js/clock.js"></script>
 	</body>
 </html>
