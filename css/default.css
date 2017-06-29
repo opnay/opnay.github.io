@@ -18,12 +18,10 @@
 .side .social svg {width:24px; height:24px;}
 .side .social a {max-height:24px; line-height:24px; text-decoration:none;}
 
-.side .list .link {text-decoration:none; padding:16px;}
+.side .list .link {padding:12px; font-size:0.9em; text-decoration:none;}
 .side .list .link:hover {background:#EEE;}
 .side .list .title {vertical-align:middle; color:rgba(0,0,0,0.87);}
 .side .list .icon {margin-right:8px; width:24px; height:auto; vertical-align:middle;}
-.mobile .side .list {font-size:18px}
-.mobile .side .list .icon {width:32px; height:32px;}
 
 /* Content Wrap */
 .desktop .nav .top {transform:translateY(-100%);}
