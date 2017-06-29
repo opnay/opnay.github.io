@@ -8,12 +8,13 @@ layout: "base"
 	<div class="profile bg-p">
 		<p><img class="img" src="/image/profile.jpg"></p>
 		<p><a class="link ellipsis ft-white" href="/">OPNay</a></p>
-		<p>
-			{% for social in site.data.social %}
-			<a class="link social" href="{{ social.href }}">{% include icon/{{social.icon}} %}</a>
-			{% endfor %}
-		</p>
 	</div>
+	<div class="social flex">
+		{% for social in site.data.social %}
+		<a {% if social.color %}style="fill:{{ social.color }};"{% endif %} href="{{ social.href }}">{% include icon/{{ social.icon }} %}</a>
+		{% endfor %}
+	</div>
+	<hr>
 	<div class="list flex vertical">
 		{% for menu in site.data.side_menu %}
 		<a class="link" href="{{ menu.href }}">
