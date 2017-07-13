@@ -5,18 +5,18 @@ theme:
     primary: "#2196F3"
     secondary: "#B3E5FC"
 ---
-<a class="card ft-black" href="/app/calculator/">
-	<div class="title">계산기<span class="category ft-black-sec right">WebApp</span></div>
-	<p class="date ft-black-sec">2017.06.10</p>
-	<p class="desc ft-black-sec">HTML, CSS, jQuery로만 만들어진 간단한 계산기입니다.</p>
-</a>
-<a class="card ft-black" href="/app/clock/">
-	<div class="title">디지털 시계<span class="category ft-black-sec right">WebApp</span></div>
-	<p class="date ft-black-sec">2017.06.28 (마지막 수정 : 2017.06.29)</p>
-	<p class="desc ft-black-sec">HTML, CSS, jQuery로 만들어진 디지털 시계입니다.<br>네이버 Whale 브라우저의 새 탭 페이지를 참고하여 만들었으며, 배경화면은 <span class="accent">unsplash</span>에 공개된 사진을 사용했습니다.</p>
-</a>
+{% for app in site.data.apps %}
+<section class="section item">
+	<a class="card ft-black" href="/app/{{ app.dir }}">
+		<div class="title">{{ app.name }}<span class="category ft-black-sec right">{{ app.type }}</span></div>
+		<p class="date ft-black-sec">{{ app.date }}</p>
+		<p class="desc ft-black-sec">{{ app.desc }}</p>
+	</a>
+</section>
+{% endfor %}
 <style>
-	.card:hover {z-index:1000; text-decoration:none; box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24)}
+	.section .card {display:block; padding:16px; transition:box-shadow 200ms;}
+	.card:hover {text-decoration:none; box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24)}
 	.card .title {margin:0 0 16px; font-size:2em;}
 	.card .category {line-height:1; font-size:18px;}
 	.card .desc {margin-top:8px; line-height:1.25; font-size:0.9em;}

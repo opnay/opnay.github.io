@@ -1,0 +1,11 @@
+- name : "계산기"
+  type : WebApp
+  dir : calculator
+  date : "2017.06.10"
+  desc : "HTML, CSS, jQuery로 만들어진 간단한 계산기입니다."
+
+- name : "디지털 시계"
+  type : WebApp
+  dir : clock
+  date : "2017.06.28 (마지막 수정 : 2017.06.29)"
+  desc : "HTML, CSS, jQuery로 만들어진 디지털 시계입니다.<br>네이버 Whale 브라우저의 새 탭 페이지를 참고하여 만들었으며, 배경화면은 <em>unsplash</em>에 공개된 사진을 사용했습니다."
