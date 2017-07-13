@@ -17,6 +17,7 @@ theme:
 			<p><strong>제대까지 남은 기간</strong> : <span class="dday-text"></span></p>
 		</div>
 		<style>
+.dday .card {padding:16px;}
 .dday .progress {width:100%; height:28px;}
 .dday .progress .progress-bar {width:0%; height:100%; transition:width 500ms;}
 .dday .progress .progress-text {margin-top:-28px; width:100%; line-height:28px; text-align:center; font-weight:bold;}
@@ -26,6 +27,19 @@ theme:
 		</style>
 	</div>
 </section>
+<section class="section kernel">
+	<div class="card">
+		{% for item in site.data.kernel %}
+		<a class="item ft-black" href="{{ item.href }}">
+			<p class="title">{{ item.name }}<span class="ft-black-sec right">{{ item.version }}</span></p>
+			<ul>
+				<li><strong>대상 기기</strong> : {{ item.device }}</li>
+				<li><strong>마지막 업데이트</strong> : {{ item.date }}</li>
+			</ul>
+		</a>
+		{% endfor %}
+	</div>
+</section>
 <section class="section contact">
 	<div class="card">
 		<p class="title">문의는 SNS 및 이메일로 해주시기 바랍니다.</p>
@@ -33,6 +47,13 @@ theme:
 		<p>SNS : <a href="https://facebook.com/opnay">Facebook</a>, <a href="https://plus.google.com/107296541638373404997">Google+</a></p>
 		<p>저장소 : <a href="https://github.com/opnay">Github</a>, <a href="https://bitbucket.org/opnay">Bitbucket</a></p>
 	</div>
-	<style>.contact .title {margin-bottom:24px; font-size:24px; font-weight:bold;}</style>
+	<style>
+		.contact .card {padding:18px;}
+		.desktop .contact .card {padding:24px;}
+	</style>
 </section>
-<style>.section .card {padding:18px;} .desktop .section .card {padding:24px;}</style>
+<style>
+.card .title {margin-bottom:16px; font-size:1.5em;}
+.card .item {display:block; padding:16px; width:100%; text-decoration:none; transition:box-shadow 200ms;}
+.card .item:hover {box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24);}
+</style>
