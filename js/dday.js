@@ -9,5 +9,5 @@
 
 	$('.dday .progress-bar').css('width', per >= 100 ? '100%' : per + '%'),
 	$('.dday .progress-text').text(per >= 100 ? '전역!' : per + '%'),
-	$('.dday .dday-text').text('D' + ((r_dday <= 0) ? '+' : '') + (-r_dday) + '(' + r_dday + ' / ' + a_dday + '일)');
+	$('.dday .dday-text').text('D' + ((r_dday <= 0) ? '+' : '') + (-r_dday) + ' / ' + a_dday);
 }(jQuery));
