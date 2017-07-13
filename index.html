@@ -5,28 +5,34 @@ theme:
     primary: "#2196F3"
     secondary: "#B3E5FC"
 ---
-<div class="card dday item">
-	<script type="text/javascript" defer src="/js/dday.js"></script>
-	<div class="progress">
-		<div class="progress-bar bg-s"></div>
-		<p class="progress-text ft-black-sec"></p>
-	</div>
-	<div class="info">
-		<p>군 복무 기간 : 2015.12.08 ~ 2017.9.07</p>
-		<p>제대일까지 : <span class="dday-text"></span></p>
-	</div>
-	<style>
+<section class="section dday">
+	<div class="card">
+		<script type="text/javascript" defer src="/js/dday.js"></script>
+		<div class="progress">
+			<div class="progress-bar bg-s"></div>
+			<p class="progress-text ft-black-sec"></p>
+		</div>
+		<div class="info">
+			<p>군 복무 기간 : 2015.12.08 ~ 2017.9.07</p>
+			<p>제대일까지 : <span class="dday-text"></span></p>
+		</div>
+		<style>
 .dday .progress {width:100%; height:28px;}
 .dday .progress .progress-bar {width:0%; height:100%; transition:width 500ms;}
 .dday .progress .progress-text {margin-top:-28px; width:100%; line-height:28px; text-align:center; font-weight:bold;}
 .dday .info {margin:16px 0 0; line-height:1.75; font-size:14px;}
 
 .dday .progress {background:#EEE;}
-	</style>
-</div>
-<div class="card contact">
-	<p style="margin-bottom:24px; font-size:24px; font-weight:bold;">문의는 SNS 및 이메일로 해주시기 바랍니다.</p>
-	<p>이메일 : <a href="mailto:opnayn@gmail.com">opnayn@gmail.com</a></p>
-	<p>SNS : <a href="https://facebook.com/opnay">Facebook</a>, <a href="https://twitter.com/opnay_dev">Twitter</a>, <a href="https://plus.google.com/107296541638373404997">Google+</a></p>
-	<p>저장소 : <a href="https://github.com/opnay">Github</a>, <a href="https://bitbucket.org/opnay">Bitbucket</a></p>
-</div>
+		</style>
+	</div>
+</section>
+<section class="section contact">
+	<div class="card">
+		<p class="title">문의는 SNS 및 이메일로 해주시기 바랍니다.</p>
+		<p>이메일 : <a href="mailto:opnayn@gmail.com">opnayn@gmail.com</a></p>
+		<p>SNS : <a href="https://facebook.com/opnay">Facebook</a>, <a href="https://plus.google.com/107296541638373404997">Google+</a></p>
+		<p>저장소 : <a href="https://github.com/opnay">Github</a>, <a href="https://bitbucket.org/opnay">Bitbucket</a></p>
+	</div>
+	<style>.contact .title {margin-bottom:24px; font-size:24px; font-weight:bold;}</style>
+</section>
+<style>.section .card {padding:18px;} .desktop .section .card {padding:24px;}</style>

@@ -28,7 +28,3 @@
 
 .content {height:100%; overflow-x:hidden; overflow-y:auto;}
 .tablet .content, .mobile .content {margin-top:64px; height:calc(100% - 64px);}
-
-.desktop .card, .tablet .card {margin:18px auto; width:640px;}
-.mobile .card {width:100%;}
-.mobile .card ~ .card{border-top:1px solid #DDD;}
