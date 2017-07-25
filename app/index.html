@@ -13,7 +13,7 @@ theme:
 ---
 {% for app in site.data.apps %}
 <section class="section item">
-	<a class="card ft-black" href="/app/{{ app.dir }}">
+	<a class="card ft-black" href="{{ app.href }}">
 		<div class="title">{{ app.name }}<span class="category ft-black-sec right">{{ app.type }}</span></div>
 		<p class="date ft-black-sec">{{ app.date }}</p>
 		<p class="desc ft-black-sec">{{ app.desc }}</p>
