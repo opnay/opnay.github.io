@@ -5,6 +5,9 @@
 			if ((width >= 1024) && !$body.hasClass('desktop')) {
 				console.log('Change Window size to Desktop');
 				$body.addClass('desktop').removeClass('tablet mobile');
+
+				// side always show
+				$('.side').toggleClass('active', false); $('.cover').remove();
 			} else if ((width >= 768) && (width < 1024) && !$body.hasClass('tablet')) {
 				console.log('Change Window size to Tablet');
 				$body.addClass('tablet').removeClass('desktop mobile');
