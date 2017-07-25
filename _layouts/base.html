@@ -14,8 +14,12 @@
 		{% include verification.html %}
 
 		<style>
-			.bg-p {background:{{ page.theme.primary }};}
-			.bg-s {background:{{ page.theme.secondary }};}
+			.bg-p {background:{{ page.theme.primary.main }};}
+			.bg-p-l {background:{{ page.theme.primary.light }};}
+			.bg-p-d {background:{{ page.theme.primary.dark }};}
+			.bg-s {background:{{ page.theme.secondary.main }};}
+			.bg-s-l {background:{{ page.theme.secondary.light }};}
+			.bg-s-d {background:{{ page.theme.secondary.dark }};}
 		</style>
 	</head>
 	<body class="desktop flex">
