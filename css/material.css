@@ -72,7 +72,7 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 .section .header .title {margin:0; line-height:2; font-size:1.4em;}
 .section .header .info {margin-bottom:16px;}
 
-.card {background:white; position:relative; border-radius:2px; width:100%; box-shadow: 0 1px 2px rgba(0,0,0,0.3);}
+.card {background:white; position:relative; border-radius:2px; width:100%; overflow:hidden; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .header ~ .card {margin:8px 0;} /* outter header */
 .card header {padding:16px; font-size:18pt;} /* inner header */
 
