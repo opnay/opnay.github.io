@@ -34,6 +34,7 @@ theme:
 </section>
 <section class="section kernel">
 	<div class="card">
+		<header class="bg-s-d ft-white">커널 목록</header>
 		{% for item in site.data.kernel %}
 		<a class="item ft-black" href="{{ item.href }}">
 			<p class="title">{{ item.name }}<span class="ft-black-sec right">{{ item.version }}</span></p>
@@ -44,6 +45,11 @@ theme:
 		</a>
 		{% endfor %}
 	</div>
+	<style>
+.item .title {margin-bottom:16px; line-height:1; font-size:1.5em;}
+.kernel .item {display:block; padding:16px; width:100%; text-decoration:none; transition:box-shadow 200ms;}
+.kernel .item:hover {box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24);}
+	</style>
 </section>
 <section class="section contact">
 	<div class="card">
@@ -56,8 +62,3 @@ theme:
 	</div>
 	<style>.contact article {padding:16px; font-size:14pt;}</style>
 </section>
-<style>
-.card .title {margin-bottom:16px; font-size:1.5em;}
-.card .item {display:block; padding:16px; width:100%; text-decoration:none; transition:box-shadow 200ms;}
-.card .item:hover {box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24);}
-</style>
