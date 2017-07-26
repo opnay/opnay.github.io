@@ -7,27 +7,22 @@ permalink: /404.html
 		<title>Page not found :(</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="css/style.css" rel="stylesheet">
 		<style>
 html, body {margin:0; padding:0; width:100%; height:100%; font-family:"roboto", "arial";}
-.body {background:url('/image/404.jpg'); background-size:cover; background-repeat:no-repeat; justify-content:center; item-align:center;}
+.body {background:url(/image/404.jpg); background-size:cover; background-repeat:no-repeat; justify-content:center; item-align:center;}
 .body:before {content:''; background:rgba(0,0,0,0.5); position:fixed; display:block; width:100%; height:100%;}
-.article {position:relative; text-align:center; color:white;}
-.article p {margin:0; line-height:1.5;}
-.a {font-size:6em;}
-.b {font-size:2em;}
-
-.flex {display:-webkit-box; display:-webkit-flex; display:-ms-flex; display:flex;}
-.flex.center {align-items:center; justify-content:center;}
+.article {position:absolute; top:50%; width:100%; transform:translateY(-50%); text-align:center; color:white;}
+.article h1 {margin:0; font-size:6em;}
+.article p {margin:0; font-size:2em;}
 
 .src {position:absolute; bottom:1em; left:1em; color:white; font-size:0.9em; text-decoration:none;}
 .src:hover {text-decoration:underline;}
 		</style>
 	</head>
-	<body class="body flex center">
+	<body class="body">
 		<div class="article">
-			<p class="a">404 Error!</p>
-			<p class="b">Page was not found! :(</p>
+			<h1>404 Error!</h1>
+			<p>Page was not found! :(</p>
 		</div>
 		<a class="src" href="https://unsplash.com/photos/yfKKT7XlyBA">Photo by Ricky Kharawala</a>
 	</body>
