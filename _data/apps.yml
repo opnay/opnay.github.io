@@ -7,14 +7,14 @@
 - name : "디지털 시계"
   type : WebApp
   href : /app/clock
-  date : "2017.06.28 (마지막 수정 : 2017.06.29)"
-  desc : "HTML, CSS, jQuery로 만들어진 디지털 시계입니다.<br>네이버 Whale 브라우저의 새 탭 페이지를 참고하여 만들었으며, 배경화면은 <em>unsplash</em>에 공개된 사진을 사용했습니다."
+  date : "2017.06.29"
+  desc : "HTML, CSS, jQuery로 만들어진 디지털 시계입니다.<br>네이버 Whale 브라우저의 새 탭 페이지를 참고하여 만들었으며, 배경화면은 <em>unsplash</em>에 공개된 사진을 사용했습니다.<br>최초 공개 : 2017.06.28"
 
 - name : "Simplify"
   type : Skin
   href : "http://blog.opnay.com/111"
   date : "2015.12.07 (1.4)"
-  desc : "Tistory 블로그에서 사용할 수 있는 블로그 스킨입니다.<br>머티리리얼 디자인 기반(?)으로 만들었으며, 최대한 사용하기 편하도록 고려하며 만들었습니다."
+  desc : "Tistory 블로그에서 사용할 수 있는 블로그 스킨입니다.<br>머티리리얼 디자인 기반(?)으로 만들었으며, 최대한 사용하기 편하도록 고려하며 만들었습니다.<br>최초 공개 : 2015.06.14"
 
 - name : "Immortal Kernel"
   type : Kernel
