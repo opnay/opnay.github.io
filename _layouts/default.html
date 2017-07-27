@@ -17,9 +17,9 @@ layout: "base"
 	<hr>
 	<div class="list flex vertical">
 		{% for menu in site.data.side_menu %}
-		<a class="link" href="{{ menu.href }}">
+		<a class="link flex ft-black" href="{{ menu.href }}">
 			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
-			<span class="title">{{ menu.name }}</span>
+			<div class="title flex-1">{{ menu.name }}</div>
 		</a>
 		{% endfor %}
 	</div>
