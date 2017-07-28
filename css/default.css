@@ -24,10 +24,4 @@
 .side .list .icon {margin-right:12px; width:24px; height:24px; vertical-align:middle;}
 
 .wrap {min-height:100%;}
-.desktop .wrap {margin-left:320px;}
-
-/* Content Wrap */
-.desktop .nav .top {transform:translateY(-100%);}
-
-.content {height:100%; overflow-x:hidden; overflow-y:auto;}
-.tablet .content, .mobile .content {margin-top:64px; height:calc(100% - 64px);}
+.desktop .side ~ .wrap {margin-left:320px;}
