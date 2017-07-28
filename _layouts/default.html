@@ -24,7 +24,7 @@ layout: "base"
 		{% endfor %}
 	</div>
 </aside>
-<div class="wrap bg-gray flex-1">
+<div class="wrap bg-gray">
 	<nav class="nav">
 		<div class="top flex animate bg-p-d">
 			<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
@@ -43,11 +43,11 @@ layout: "base"
 			$button.click(function () {activeNav(!$side.hasClass('active'));});
 
 			/* Nav shadow anime */
-			$('.content').scroll(function () {
-				a = $('.nav .top');
-				if (this.scrollTop > 0 && !a.hasClass('shadow'))
+			$(window).scroll(function () {
+				let a = $('.nav .top'), p = $(this).scrollTop();
+				if (p > 0 && !a.hasClass('shadow'))
 					a.toggleClass('shadow',true);
-				else if (this.scrollTop == 0)
+				else if (p == 0)
 					a.toggleClass('shadow',false)
 			});
 		})(jQuery);
