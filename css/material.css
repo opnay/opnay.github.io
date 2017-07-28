@@ -69,7 +69,7 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 .desktop .section {margin:32px auto; width:688px;} /* article width: 640px */
 .desktop.wide .section {width:968px;} /* article width: 920px */
 
-.section .header .title {margin:0; line-height:2; font-size:1.4em;}
+.section .header .title {margin:0; line-height:2; font-size:18pt;}
 .section .header .info {margin-bottom:16px;}
 
 .card {background:white; position:relative; border-radius:2px; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
@@ -78,7 +78,7 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 
 .nav .top {position:fixed; top:0; left:0; padding:14px; width:100%; height:64px; transiion:box-shadow linear 200ms;}
 .tablet .nav .top.shadow, .mobile .nav .top.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
-.nav .top .title {margin-left:14px; line-height:36px; font-size:1.4em;}
+.nav .top .title {margin-left:14px; line-height:36px; font-size:18pt;}
 
 .nav .bottom {position:fixed; bottom:0; left:0; width:100%; height:64px;}
 
