@@ -3,7 +3,7 @@ layout: "base"
 ---
 <aside class="side animate">
 	<div class="close">
-		<a class="button" href="#">{% include icon/arrow-left.svg %}</a>
+		<a class="button" href="#"><img width="24px" height="24px" src="image/svg/arrow_left.svg" /></a>
 	</div>
 	<div class="profile bg-s">
 		<p><img class="img" src="/image/profile.jpg"></p>
@@ -11,7 +11,7 @@ layout: "base"
 	</div>
 	<div class="social flex">
 		{% for social in site.data.social %}
-		<a {% if social.color %}style="fill:{{ social.color }};"{% endif %} href="{{ social.href }}">{% include icon/{{ social.icon }} %}</a>
+		<a href="{{ social.href }}"><img width="24px" height="24px" src="image/svg/{{ social.icon }}" /></a>
 		{% endfor %}
 	</div>
 	<hr>
@@ -27,7 +27,7 @@ layout: "base"
 <div class="wrap bg-gray">
 	<nav class="nav">
 		<div class="top flex animate bg-p-d">
-			<div class="menu"><a class="button" href="#">{% include icon/menu.svg %}</a></div>
+			<div class="menu"><a class="button" href="#"><img width="24px" height="24px" src="image/svg/menu.svg" /></a></div>
 			<div class="title flex-1 ft-white">{{ page.title }}</div>
 		</div>
 	</nav>

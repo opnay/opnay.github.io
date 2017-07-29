@@ -5,18 +5,15 @@
 - name: "Facebook"
   href: "https://facebook.com/opnay"
   icon: "facebook.svg"
-  color: "#3b5998"
 
 - name: "Twitter"
   href: "https://twitter.com/opnay_dev"
   icon: "twitter.svg"
-  color: "#1da1f2"
 
 - name: "Google Plus"
   href: "https://plus.google.com/107296541638373404997"
   icon: "googleplus.svg"
-  color: "#ea4335"
 
 - name: "Github"
   href: "https://github.com/opnay"
-  icon: "github.svg"
+  icon: "github_face.svg"
