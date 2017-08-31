@@ -1,0 +1,62 @@
+---
+layout: "default"
+title: "Applications"
+theme:
+    primary:
+        main: "#2196F3"
+        light: "#6ec6ff"
+        dark: "#0069c0"
+    secondary:
+        main: "#03a9f4"
+        light: "#67daff"
+        dark: "#007ac1"
+---
+<section class="section item">
+	<div class="card ft-black">
+		<div class="title">컴퓨터 예약종료<span class="category ft-black-sec right">Windows</span></div>
+		<article class="article">
+			<p class="image">
+				<img src="img/1.png"/>
+				<img src="img/2.png"/>
+			</p>
+			<ul>
+				<li>타겟 : Windows</li>
+				<li>공개 : 2017.09.01</li>
+				<li>마지막 수정 : 2017.09.01</li>
+			</ul>
+			<p>윈도우 프로그래밍 연습용으로 만들어본 컴퓨터 예약종료 프로그램입니다.<br>시, 분, 초 단위로 예약할 수 있으며, 종료, 다시시작을 선택하여 예약할수 있습니다.</p>
+			<h3>다운로드</h3>
+			<p>※ 소스코드는 압축파일이며, 실행파일은 압축없이 exe파일입니다.</p>
+			<p><a class="file" href="http://opnay.tistory.com/attachment/cfile21.uf@9947D63359A82F9914EC49.zip">소스코드</a></p>
+			<p><a class="file run" href="http://opnay.tistory.com/attachment/cfile26.uf@99421F3359A82F932A3539.exe">실행파일</a></p>
+		</article>
+	</div>
+</section>
+<style>
+	.section .card {display:block;}
+	.card .title {padding:16px; font-size:2em;}
+	.card .category {line-height:1; font-size:18px;}
+	.article {padding:16px; font-size:14pt;}
+	.article ul {margin:16px 0;}
+	.article p {margin:8px 0;}
+	.article h3 {border-bottom:1px solid rgba(0,0,0,0.12);}
+	.article .image {margin-bottom:8px; text-align: center;}
+	.article .file {
+		background:#03A9F4; position:relative;
+		display:inline-block; margin:8px 0; padding:0 16px 0 64px;
+		border-radius:2px; height:48px; line-height:48px;
+		overflow:hidden; font-size:14pt; color:white;
+		box-shadow:0 0 4px rgba(0,0,0,0.3); transition:box-shadow 200ms;
+	}
+	.article .file:hover {text-decoration:none; box-shadow:0 0 8px rgba(0,0,0,0.6);}
+	.article .file:before {
+		content:'';
+		background:rgba(0,0,0,0.2) url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4NCiAgIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik01LDIwSDE5VjE4SDVNMTksOUgxNVYzSDlWOUg1TDEyLDE2TDE5LDlaIiAvPg0KPC9zdmc+") no-repeat center;
+		position:absolute; top:0; left:0;
+		display:block; margin-right:8px; width:48px; height:48px;
+		vertical-align:middle;
+	}
+	.article .run:before {
+		background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiICB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0xMiwyMEM3LjU5LDIwIDQsMTYuNDEgNCwxMkM0LDcuNTkgNy41OSw0IDEyLDRDMTYuNDEsNCAyMCw3LjU5IDIwLDEyQzIwLDE2LjQxIDE2LjQxLDIwIDEyLDIwTTEyLDJBMTAsMTAgMCAwLDAgMiwxMkExMCwxMCAwIDAsMCAxMiwyMkExMCwxMCAwIDAsMCAyMiwxMkExMCwxMCAwIDAsMCAxMiwyTTEwLDE2LjVMMTYsMTJMMTAsNy41VjE2LjVaIiAvPgo8L3N2Zz4=")
+	}
+</style>
