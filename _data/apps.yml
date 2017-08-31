@@ -1,4 +1,4 @@
-- name : "컴퓨터 예약 종료"
+- name : "시스템 예약 종료"
   type : Windows
   href : /app/shutdown
   date : "2017.09.01"
