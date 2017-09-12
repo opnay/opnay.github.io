@@ -24,6 +24,6 @@
 
 - name : "Immortal Kernel"
   type : Kernel
-  href : "http://blog.opnay.com/109"
-  date : "2015.11.07 (1.13)"
-  desc : "Galaxy S4 LTE (S/K) 모델에서 사용할 수 있는 커스텀 커널입니다.<br>Linux 3.4.110으로 업스트림했으며, f2fs파일시스템 지원, IO 스케줄러 / 가버너 추가 등 여러가지 트윅과 기능을 적용한 커널입니다."
+  href : "http://blog.opnay.com/134"
+  date : "2017.09.12 (1.14)"
+  desc : "Galaxy S4 LTE (S/K) 모델에서 사용할 수 있는 커스텀 커널입니다.<br>f2fs파일시스템 지원, IO 스케줄러 / 가버너 추가 등 여러가지 트윅과 기능을 적용한 커널입니다."
