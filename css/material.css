@@ -57,7 +57,7 @@ pre {background:rgba(0,0,0,0.1); margin:12px 0; padding:16px; font-size:0.9em;}
 .flex.center {align-items:center; justify-content:center;}
 .flex.vertical {flex-direction:column;}
 .flex-1 {-webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1;}
-.animate {transition:transform 200ms;}
+.animate {transition:transform ease-out .2s;}
 .button {display:block; padding:6px; width:36px; height:36px;}
 .button svg {fill:white; width:24px; height:24px;}
 
