@@ -1,39 +1,38 @@
 ---
-layout: "default"
+layout: "main"
 title: "OPNay's Lab"
 theme:
     primary:
         main: "#2196F3"
         light: "#6ec6ff"
         dark: "#0069c0"
+image_number: 2
 ---
-<section class="section kernel">
-	<div class="card">
-		<header class="bg-p-d ft-white">커널 목록</header>
-		{% for item in site.data.kernel %}
-		<a class="item ft-black" href="{{ item.href }}">
-			<p class="title">{{ item.name }}<span class="ft-black-sec right">{{ item.version }}</span></p>
-			<ul>
-				<li><strong>대상 기기</strong> : {{ item.device }}</li>
-				<li><strong>마지막 업데이트</strong> : {{ item.date }}</li>
-			</ul>
+<section class="card center">
+    <img class="profile" src="{{ site.url }}/image/profile.jpg" />
+    <div class="name">OPNay</div>
+	<div class="social flex">
+		{% for social in site.data.social %}
+		<a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" /></a>
+		{% endfor %}
+	</div>
+	<div class="list flex vertical">
+		{% for menu in site.data.side_menu %}
+		<a class="link flex ft-black" href="{{ menu.href }}">
+			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
+			<div class="title flex-1">{{ menu.name }}</div>
 		</a>
 		{% endfor %}
 	</div>
-	<style>
-.item .title {margin-bottom:16px; line-height:1; font-size:1.5em;}
-.kernel .item {display:block; padding:16px; width:100%; text-decoration:none; transition:box-shadow 200ms;}
-.kernel .item:hover {box-shadow:0 0 8px rgba(0,0,0,0.24), 0 8px 8px rgba(0,0,0,0.24);}
-	</style>
-</section>
-<section class="section contact">
-	<div class="card">
-		<header class="bg-p-d ft-white">문의는 SNS 및 이메일로 해주시기 바랍니다.</header>
-		<article>
-			<p>이메일 : <a href="mailto:opnayn@gmail.com">opnayn@gmail.com</a></p>
-			<p>SNS : <a href="https://facebook.com/opnay">Facebook</a>, <a href="https://plus.google.com/107296541638373404997">Google+</a></p>
-			<p>저장소 : <a href="https://github.com/opnay">Github</a>, <a href="https://bitbucket.org/opnay">Bitbucket</a></p>
-		</article>
-	</div>
-	<style>.contact article {padding:16px; font-size:14pt;}</style>
+    <style>
+        .card {margin:0; width:320px;}
+        .card.center {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; padding:16px;}
+        .card .profile {margin:12px; width:128px; height:128px; border-radius:50%;}
+        .card .name {font-size:1.6rem;}
+        .card .social {padding:16px 12px; justify-content:space-around;}
+        .card .list .link {padding:0.4rem; text-align:left;}
+        .card .list .link:hover {background:#EEE; text-decoration:none;}
+        .card .list .link .icon {margin-right:0.6rem; width:1.2rem; height:1.2rem;}
+        .card .list .link .title {line-height:1.2rem; font-size:0.9rem;}
+    </style>
 </section>
