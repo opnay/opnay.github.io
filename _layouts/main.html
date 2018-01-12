@@ -26,6 +26,6 @@ body:before {content:''; background:rgba(0,0,0,0.5); position:fixed; display:blo
 <script>
     (function ($) {
         $('body').css('background-image', 'url("{{ site.url }}/image/unsplash/' + ($.now() % {{ page.image_number }} + 1) + '.jpg")');
-        $('html').ready(function () {$('.loader-bg').addClass('done');});
+        window.onload = function () {$('.loader-bg').addClass('done');};
     })(jQuery);
 </script>
