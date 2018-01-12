@@ -4,12 +4,6 @@
   date : "2017.09.01"
   desc : "Windows 프로그래밍 연습용으로 만들어 봤습니다."
 
-- name : "계산기"
-  type : WebApp
-  href : /app/calculator
-  date : "2017.06.10"
-  desc : "HTML, CSS, jQuery로 만들어진 간단한 계산기입니다."
-
 - name : "디지털 시계"
   type : WebApp
   href : /app/clock
