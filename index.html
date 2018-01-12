@@ -9,14 +9,17 @@ theme:
 image_number: 2
 ---
 <section class="card center">
-    <img class="profile" src="{{ site.url }}/image/profile.jpg" />
-    <div class="name">OPNay</div>
-	<div class="social flex">
-		{% for social in site.data.social %}
-		<a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" /></a>
-		{% endfor %}
-	</div>
-	<div class="list flex vertical">
+    <div class="block">
+        <img class="profile" src="{{ site.url }}/image/profile.jpg" />
+        <div class="name">OPNay</div>
+        <div class="social flex">
+            {% for social in site.data.social %}
+            <a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" /></a>
+            {% endfor %}
+        </div>
+    </div>
+    <hr>
+	<div class="block flex vertical">
 		{% for menu in site.data.side_menu %}
 		<a class="link flex ft-black" href="{{ menu.href }}">
 			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
@@ -26,13 +29,14 @@ image_number: 2
 	</div>
     <style>
         .card {margin:0; width:320px;}
-        .card.center {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; padding:16px;}
-        .card .profile {margin:12px; width:128px; height:128px; border-radius:50%;}
-        .card .name {font-size:1.6rem;}
-        .card .social {padding:16px 12px; justify-content:space-around;}
-        .card .list .link {padding:0.4rem; text-align:left;}
-        .card .list .link:hover {background:#EEE; text-decoration:none;}
-        .card .list .link .icon {margin-right:0.6rem; width:1.2rem; height:1.2rem;}
-        .card .list .link .title {line-height:1.2rem; font-size:0.9rem;}
+        .card .block {padding:0.8rem;}
+        .card.center {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;}
+        .card .profile {display:inline-block; margin-bottom:0.4rem; width:128px; height:128px; border-radius:50%;}
+        .card .name {margin-bottom:0.8rem; font-size:1.6rem;}
+        .card .social {justify-content:space-around;}
+        .card .link {padding:0.4rem; text-align:left;}
+        .card .link:hover {background:#EEE; text-decoration:none;}
+        .card .link .icon {margin-right:0.6rem; width:1.2rem; height:1.2rem;}
+        .card .link .title {line-height:1.2rem; font-size:0.9rem;}
     </style>
 </section>
