@@ -8,7 +8,7 @@
 .side .close {position:absolute; top:0; left:0; padding:14px; width:64px; height:64px;}
 .desktop .side .close {display:none;}
 
-.side .profile {padding:24px; text-align:center; font-size:32px;}
+.side .profile {padding:24px; text-align:center; font-size:1.6rem;}
 .side .profile p {margin:0; line-height:1.5;}
 .side .profile .img {border-radius:50%; width:128px; height:auto;}
 
@@ -18,7 +18,7 @@
 
 .side .list .link {padding:12px; text-decoration:none;}
 .side .list .link:hover {background:#EEE;}
-.side .list .title {line-height:24px; font-size:18px;}
+.side .list .title {line-height:24px; font-size:0.9rem;}
 .side .list .icon {margin-right:12px; width:24px; height:24px; vertical-align:middle;}
 
 .wrap {min-height:100%; transition:margin ease-out .2s}
