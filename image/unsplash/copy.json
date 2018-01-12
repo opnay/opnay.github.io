@@ -1,0 +1,13 @@
+---
+img:
+    - f_name: "1.jpg"
+      user: "@r3dmax"
+      url: "3l3RwQdHRHg"
+    - f_name: "2.jpg"
+      user: "@cikstefan"
+      url: "TPv9dh822VA"
+---
+[
+{% for tmp in page.img %}{"file":"{{ site.url }}/image/unsplash/{{ tmp.f_name }}", user:"{{ tmp.user }}", url:"https://unsplash.com/photos/{{ tmp.url }}"}{% unless forloop.last %},
+{% endunless %}{% endfor %}
+]
