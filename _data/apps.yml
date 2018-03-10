@@ -1,3 +1,9 @@
+- name : "Simplify2"
+  type : "Web, Skin"
+  href : "href://blog.opnay.com/143"
+  date : "2018.03.07 (v1)"
+  desc : "Tistory 스킨인 Simplify의 두번째 버전입니다. 1단형에 내용에만 집중할 수 있도록 다른 요소들을 최소화 했고, 아이콘으로된 링크들로 블로그의 메뉴를 한번에 알수 있도록 만들었습니다."
+
 - name : "시스템 예약 종료"
   type : "Windows, Application"
   href : /app/shutdown
