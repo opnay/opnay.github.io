@@ -4,7 +4,7 @@
 /* Tags */
 html {
 	-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-	font-family:Roboto,'Noto Sans','Noto Sans KR',Arial,'Nanum Gothic',sans-serif;
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size:16pt;
 }
 html, body {width:100%; height:100%;}
