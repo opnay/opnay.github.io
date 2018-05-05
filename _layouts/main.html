@@ -8,6 +8,6 @@ body:before {content:''; background:rgba(0,0,0,0.5); position:fixed; display:blo
 </style>
 <script>
     (function ($) {
-        $('body').css('background-image', 'url("{{ site.url }}/image/unsplash/' + ($.now() % {{ page.image_number }} + 1) + '.jpg")');
+        $('body').css('background-image', 'url("/image/unsplash/' + ($.now() % {{ page.image_number }} + 1) + '.jpg")');
     })(jQuery);
 </script>
