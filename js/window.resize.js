@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-	var prev_mode = 0,
+	var prev_mode = -1,
         mode = 0, // 0: mobile, 1: tablet, 2: desktop
         resizeWin = function () {
 			var a = $('html'), width = window.innerWidth;
