@@ -7,3 +7,7 @@ defaults:
       path: ""
     values:
       image_number: 6
+      md_theme:
+        main: "#2196F3"
+        light: "#6ec6ff"
+        dark: "#0069c0"
