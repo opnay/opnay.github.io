@@ -1,2 +1,9 @@
 layout: ""
 url: "opnay.com"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image_number: 6
