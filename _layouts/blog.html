@@ -28,6 +28,22 @@ layout: "main"
         </header>
         <article class="article">{{ content }}</article>
 
+        {% if page.ads %}
+        <div id="post_adsense">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Github Pages -->
+            <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-2339446308971759"
+                    data-ad-slot="5727311856"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        {% endif %}
+
         {% if page.comments %}
         <hr>
         <div id="disqus_thread"></div>
@@ -73,6 +89,8 @@ body::before {display:none !important;}
 .content .post-header .title {font-size:1.4rem;}
 .content .post-header .info {font-size:0.8rem;}
 .content .article {padding:8px 24px 16px; font-size:0.8rem;}
+
+#post_adsense {text-align:center;}
 #disqus_thread {padding:16px 24px;}
 
 /* Mobile */
