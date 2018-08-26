@@ -1,0 +1,47 @@
+---
+layout: "main"
+title: "Posts"
+---
+{% assign psize = site.posts | size %}
+<section class="card {% if psize == 0 %}empty{% endif %}">
+    <div class="toolbar">
+        <div class="back left">
+            <a href="javascript:window.history.back()"><img width="24px" height="24px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPg0KICAgIDxwYXRoIGQ9Ik0yMCAxMUg3LjgzbDUuNTktNS41OUwxMiA0bC04IDggOCA4IDEuNDEtMS40MUw3LjgzIDEzSDIwdi0yeiIvPg0KPC9zdmc+"></a>
+        </div>
+        <div class="title left">
+            {% if psize == 0 %}
+            <p>There's no Posts</p>
+            {% else %}
+            <p>{{ page.title }}({{ site.posts | size }})</p>
+            {% endif %}
+        </div>
+    </div>
+    <section class="list">
+        {% for post in site.posts %}
+        <a class="item ft-black" href="{{ post.url }}">
+            <h1 class="title">{{ post.title }}</h1>
+            <p class="desc ft-black-sec">빼애애애애애애애애애애애애ㅐ액</p>
+        </a>
+        {% endfor %}
+    </section>
+</section>
+
+<script>
+    var f = function () {$('.card').toggleClass('over', ((window.innerHeight - 32) < $('.card').height()));};
+    $('body').ready(f); $(window).resize(f);
+</script>
+<style>
+    .card {position:absolute; top:50%; left:50%; max-width:738px; transform:translate(-50%, -50%); overflow:hidden;}
+    .card.over {margin:16px 0; top:0; transform:translate(-50%, 0);}
+    .card.empty {background:rgb(255, 180, 105);}
+    .mobile .card {max-width:calc(100% - 32px);}
+    .toolbar::after {content:''; display:block; clear:both;}
+    .toolbar .back {padding:14px; width:64px; height:64px;}
+    .toolbar .back a {display:block; padding:6px; width:32px; height:32px;}
+    .toolbar .title {width:calc(100% - 64px);}
+    .toolbar .title p {line-height: 64px;}
+    .list .item {display:block; padding:16px;}
+    .list .item:hover {background:rgba(127,127,127,0.12); text-decoration:none;}
+    .list .title {margin:0 0 8px; font-size:1rem;}
+    .list .desc {font-size:0.8rem; max-height:2.4rem; line-height:1.2rem; overflow:hidden;}
+</style>
