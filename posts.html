@@ -20,7 +20,7 @@ title: "Posts"
         {% for post in site.posts %}
         <a class="item ft-black" href="{{ post.url }}">
             <h1 class="title">{{ post.title }}</h1>
-            <p class="desc ft-black-sec">빼애애애애애애애애애애애애ㅐ액</p>
+            <p class="desc ft-black-sec">{{ post.content | strip_html | xml_escape }}</p>
         </a>
         {% endfor %}
     </section>
