@@ -1,6 +1,8 @@
 layout: ""
 url: "opnay.com"
 
+permalink: /:categories/:year:month-:slug
+
 defaults:
   -
     scope:
