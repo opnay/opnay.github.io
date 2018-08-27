@@ -13,11 +13,11 @@ title: "OPNay's Lab"
         </div>
     </div>
     <hr>
-	<div class="block flex vertical">
+	<div class="block vertical">
 		{% for menu in site.data.side_menu %}
-		<a class="link flex ft-black" href="{{ menu.href }}">
+		<a class="link ft-black" href="{{ menu.href }}">
 			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
-			<div class="title flex-1">{{ menu.name }}</div>
+			<span class="title">{{ menu.name }}</span>
 		</a>
 		{% endfor %}
 	</div>
@@ -28,9 +28,9 @@ title: "OPNay's Lab"
         .card .profile {display:block; margin:0 auto 0.4rem; width:128px; height:128px; border-radius:50%;}
         .card .name {margin-bottom:0.8rem; font-size:1.6rem;}
         .card .social {justify-content:space-around;}
-        .card .link {padding:0.4rem; text-align:left;}
+        .card .link {display:block; padding:0.4rem; text-align:left;}
         .card .link:hover {background:#EEE; text-decoration:none;}
-        .card .link .icon {margin-right:0.6rem; width:1.2rem; height:1.2rem;}
-        .card .link .title {line-height:1.2rem; font-size:0.9rem;}
+        .card .link .icon {margin-right:0.6rem; width:1.2rem; height:1.2rem; vertical-align:middle;}
+        .card .link .title {line-height:1.2rem; font-size:0.9rem; vertical-align:middle;}
     </style>
 </section>
