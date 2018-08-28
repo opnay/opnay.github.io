@@ -66,26 +66,6 @@ pre {background:#f0f2f6; margin:12px 0; padding:16px; font-size:0.9em;}
 .center {text-align:center;}
 
 /* Components */
-.section {margin:1.2rem auto; width:calc(100% - 1.2rem);}
-.desktop .section {margin:32px auto; width:688px;} /* article width: 640px */
-.desktop.wide .section {width:968px;} /* article width: 920px */
-
-.section .header .title {margin:0; line-height:2; font-size:1.1rem;}
-.section .header .info {margin-bottom:16px;}
-
 .card {background:white; position:relative; border-radius:8px; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.3);}
 .header ~ .card {margin:8px 0;} /* outter header */
 .card header {border-radius:2px 2px 0 0; padding:16px; font-size:1.1rem;} /* inner header */
-
-.nav .top {z-index:100; position:fixed; top:0; padding:14px; width:100%; height:64px; transition:all 200ms;}
-.nav .top.shadow {box-shadow:0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);}
-.nav .top .menu {margin-right:14px;}
-.nav .top .title {line-height:36px; font-size:1.1rem;}
-.desktop .nav .top {width:calc(100% - 320px);}
-.desktop .nav .menu {display:none;}
-
-.content {padding:64px 0 1.2rem;}
-
-.cover {z-index:110; background:rgba(0,0,0,0.1); position:fixed; width:100%; height:100%;}
-
-.footer {text-align:center; font-size:0.9rem;}
