@@ -3,6 +3,8 @@ url: "https://opnay.com"
 
 permalink: /:categories/:year:month-:slug
 
+exclude: ["CNAME","README.md"]
+
 defaults:
   -
     scope:
