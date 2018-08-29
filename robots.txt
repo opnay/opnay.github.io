@@ -1,8 +1,3 @@
 User-agent: *
-Disallow: /naver18d6a77d7f7381747a9424e73afad52f.html
-Disallow: /README.md
-Disallow: /CNAME
-Disallow: /run.sh
-Disallow: /README.md
-Disallow: /404.html
 Allow: /
+Disallow: /404.html
