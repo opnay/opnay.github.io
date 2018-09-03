@@ -19,7 +19,7 @@ C++파일은 확장자가 cpp이며, 아래 내용은 모든 프로그래밍 언
 <br>
 
 ### 코드
-<script src="https://gist.github.com/opnay/3425a88d4bbb02f1efd9fcbb28e32917.js"></script>
+{% include services/gist.html src="3425a88d4bbb02f1efd9fcbb28e32917" %}
 
 <br>
 
