@@ -36,6 +36,8 @@ blockquote {background:#f0f2f6; margin:12px 24px; padding:16px;}
 :not(pre) > code {background:#f0f2f6; margin:0 2px; padding:2px 6px; font-size:0.9em;}
 pre {background:#f0f2f6; margin:12px 0; padding:16px; font-size:0.9em;}
 
+article img {width:100%;}
+
 /*
  * Class
  */
