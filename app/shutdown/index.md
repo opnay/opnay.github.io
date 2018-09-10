@@ -7,7 +7,7 @@ comments: true
 ads: true
 ---
 
-<p class="image center"><img alt="실행직후" src="img/1.png"/><img alt="작동중" src="img/2.png"/></p>
+<p class="image center"><img alt="실행직후" src="/assets/app/shutdown-1.png"/><img alt="작동중" src="/assets/app/shutdown-1.png"/></p>
 - OS : Windows
 
 <br>
