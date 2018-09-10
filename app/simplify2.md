@@ -6,7 +6,7 @@ date: "2018-03-07 00:26"
 comments: true
 ads: true
 ---
-![Simplify2](/image/simplify2.png)
+![Simplify2](/assets/app/simplify2.png)
 
 ## Simplify의 두번째 버전입니다.
 
