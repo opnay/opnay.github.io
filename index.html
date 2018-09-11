@@ -2,7 +2,7 @@
 layout: "base"
 title: "OPNay's Lab"
 ---
-<section class="card center">
+<section id="profile" class="card center">
     <div class="block">
         <img class="profile" src="/image/profile.png" />
         <div class="name">OPNay</div>
@@ -22,15 +22,17 @@ title: "OPNay's Lab"
 		{% endfor %}
 	</div>
     <style>
-        .card {margin:0; width:320px;}
-        .card .block {padding:0.8rem;}
         .card.center {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;}
-        .card .profile {display:block; margin:0 auto 0.4rem; width:128px; height:128px; border-radius:50%;}
-        .card .name {margin-bottom:0.8rem; font-size:1.6rem;}
-        .card .social {justify-content:space-around;}
-        .card .link {display:block; padding:0.4rem; text-align:left;}
-        .card .link:hover {background:#EEE; text-decoration:none;}
-        .card .link .icon {margin-right:0.6rem; width:1.2rem; height:1.2rem; vertical-align:middle;}
-        .card .link .title {line-height:1.2rem; font-size:0.9rem; vertical-align:middle;}
+    
+        #profile {margin:0; width:320px;}
+        #profile .block {padding:16px;}
+        #profile .profile {display:block; margin:0 auto 16px; width:128px; height:128px; border-radius:50%;}
+        #profile .name {margin-bottom:16px; font-size:32px;}
+        #profile .social {justify-content:space-around;}
+
+        #profile .link {display:block; padding:8px; text-align:left;}
+        #profile .link:hover {background:#EEE; text-decoration:none;}
+        #profile .link .icon {margin-right:8px; width:24px; height:24px; vertical-align:middle;}
+        #profile .link .title {vertical-align:middle;}
     </style>
 </section>
