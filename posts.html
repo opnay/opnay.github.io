@@ -3,7 +3,7 @@ layout: "base"
 title: "Posts"
 ---
 {% assign psize = site.posts | size %}
-<section class="card {% if psize == 0 %}empty{% endif %}">
+<section class="card center {% if psize == 0 %}empty{% endif %}">
     <div class="toolbar">
         <div class="back left">
             <a href="javascript:window.history.back()"><img width="24px" height="24px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+DQogICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPg0KICAgIDxwYXRoIGQ9Ik0yMCAxMUg3LjgzbDUuNTktNS41OUwxMiA0bC04IDggOCA4IDEuNDEtMS40MUw3LjgzIDEzSDIwdi0yeiIvPg0KPC9zdmc+"></a>
@@ -31,7 +31,7 @@ title: "Posts"
     $('body').ready(f); $(window).resize(f);
 </script>
 <style>
-    .card {position:absolute; top:50%; left:50%; max-width:738px; transform:translate(-50%, -50%); overflow:hidden;}
+    .card {max-width:738px; overflow:hidden;}
     .card.over {margin:16px 0; top:0; transform:translate(-50%, 0);}
     .card.empty {background:rgb(255, 180, 105);}
     .mobile .card {max-width:calc(100% - 32px);}
