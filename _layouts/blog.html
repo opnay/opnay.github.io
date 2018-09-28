@@ -37,8 +37,7 @@ layout: "base"
     </div>
 </div>
 <style>
-body::before {content:none;}
-.pg-header {padding:64px 32px;}
+.pg-header {position:relative; padding:64px 32px;}
 .nav {background:rgba(0,0,0,0.5); padding:32px; border-radius:8px; width:100%; color:white; font-size:32px;}
 
 .nav .owner {display:inline-block;}
@@ -51,7 +50,7 @@ body::before {content:none;}
 .v_hr {display:inline-block; margin:0 8px; border-right:1px solid white; height:36px; vertical-align:top;}
 .no_deco:hover {text-decoration:none;}
 
-.content {background:#F1F3F4; padding:32px; min-height:calc(100% - 256px);}
+.content {padding:0 32px 32px; min-height:calc(100% - 256px);}
 .content .post-header {padding:16px 24px;}
 .content .post-header .title {font-size:24px;}
 .content .post-header .info {font-size:0.8rem;}
