@@ -1,0 +1,20 @@
+---
+layout: "lists"
+title: "Posts"
+back: "/category"
+---
+{% assign psize = site.posts | size %}
+{% if psize == 0 %}
+<script>
+    (function($){ $(".card").addClass("empty").find(".toolbar .title").text("There's no Posts"); })(jQuery)
+</script>
+{% else %}
+<section class="list">
+    {% for post in site.posts limit:20 %}
+    <a class="item ft-black" href="{{ post.url }}">
+        <h1 class="title">{{ post.title }}</h1>
+        <p class="desc ft-black-sec">{{ post.content | strip_html | xml_escape }}</p>
+    </a>
+    {% endfor %}
+</section>
+{% endif %}

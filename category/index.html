@@ -1,0 +1,39 @@
+---
+layout: "base"
+title: "OPNay's Lab"
+---
+<section id="profile" class="card center">
+    <div class="block">
+        <img class="profile" src="/image/profile.png" />
+        <div class="name">OPNay</div>
+        <div class="social flex">
+            {% for social in site.data.social %}
+            <a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" /></a>
+            {% endfor %}
+        </div>
+    </div>
+    <hr>
+    <section class="block vertical">
+        <a class="item ft-black" href="/category/recent">
+            <span class="title">최근 글</span>
+        </a>
+        {% for category in site.categories %}
+        <a class="item ft-black" href="/category/{{ category[0] | downcase }}">
+            <span class="title">{{ category[0] }}</span>
+        </a>
+        {% endfor %}
+    </section>
+    <style>
+        #profile {margin:0; width:320px; text-align:center;}
+        #profile .block {padding:16px;}
+        #profile .profile {display:block; margin:0 auto 16px; width:128px; height:128px; border-radius:50%;}
+        #profile .name {margin-bottom:16px; font-size:32px;}
+        #profile .social {justify-content:space-around;}
+        #profile .social a {display:inline-block; border-radius:50%; padding:8px; width:40px; height:40px; overflow:hidden;}
+        #profile .social a:hover {background:#EEE;}
+
+        #profile .item {display:block; padding:8px 16px; text-align:left;}
+        #profile .item:hover {background:#EEE; text-decoration:none;}
+        #profile .item .title {vertical-align:middle;}
+    </style>
+</section>
