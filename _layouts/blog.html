@@ -24,7 +24,7 @@ layout: "base"
         <header class="post-header">
             <p class="title ft-black">{{ page.title }}</p>
             <p class="info ft-black-sec">
-                <a class="category" href="/category">{{ page.category }}</a> · <span class="date">{{ page.date | date:'%Y-%m-%d %H:%M'}}</span>
+                <a class="category" href="/category/{{ page.category | downcase }}">{{ page.category }}</a> · <span class="date">{{ page.date | date:'%Y-%m-%d %H:%M'}}</span>
             </p>
         </header>
         <article class="article">{{ content }}</article>
