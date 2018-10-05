@@ -9,7 +9,7 @@ ads: true
 Kotlin이란 언어는 JVM / JS / Native 세종류로 나눠집니다. 네이티브 실행파일(.exe 또는 Linux,OSX 실행파일, .so라이브러리 등..)쪽은 Kotlin Native이며, JS는 JavaScript로 컴파일되며, JVM은 Java언어로 컴파일됩니다.
 
 ## Kotlin JVM
-JVM은 Java Virtual Machine의 약자이며, Java언어를 사용할때 배울수 있는 가상머신의 일종입니다. (JVM의 깊고 자세한 내용은 다루진않을께요..)
+JVM은 Java Virtual Machine의 약자이며, Java언어를 사용할때 배울수 있는 가상머신의 일종입니다. (여기서는 간단한 과정만 설명하겠습니다.)
 
 <br>
 
@@ -21,7 +21,7 @@ Kotlin JVM은 이 JVM에서 실행할 수 있는 바이트코드인 .class파일
 
 <br>
 
-전체적인 과정은 .kt(Kotlin) -> .java(Java) -> .class(바이트코드)) 순으로 컴파일됩니다. (안드로이드는 .dex로 변환하는 과정이 마지막에 추가됩니다.)
+전체적인 과정은 .kt(Kotlin) -> .java(Java) -> .class(바이트코드) 순으로 컴파일됩니다. (JVM종류에 따라서 .class가 아닌 다른 파일로 추가변환과정이 있을 수 있습니다.)
 
 <br>
 
