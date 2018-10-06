@@ -30,7 +30,7 @@ fieldset {border:0;}
 
 table {margin:16px auto; border-spacing:0;}
 th, td {padding:6px 12px;}
-td {border-bottom:1px solid #DDD; font-size:0.9em;}
+td {font-size:0.9em;}
 th {background:#EEE;}
 
 blockquote {background:#f0f2f6; margin:12px 24px; padding:16px;}
