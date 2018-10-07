@@ -10,15 +10,11 @@ ads: true
 <p class="image center"><img alt="실행직후" src="/assets/app/shutdown-1.png"/><img alt="작동중" src="/assets/app/shutdown-1.png"/></p>
 - OS : Windows
 
-<br>
-
 윈도우 프로그래밍 연습용으로 만들어본 컴퓨터 예약종료 프로그램입니다.
 시, 분, 초 단위로 예약할 수 있으며, 종료, 다시시작을 선택하여 예약할 수 있습니다.
 
 ### 다운로드
 ※ 소스코드는 압축파일이며, 실행파일은 압축없이 exe파일입니다.
-
-<br>
 
 <a class="file" href="http://opnay.tistory.com/attachment/cfile21.uf@9947D63359A82F9914EC49.zip">소스코드</a>
 <a class="file run" href="http://opnay.tistory.com/attachment/cfile26.uf@99421F3359A82F932A3539.exe">실행파일</a>
