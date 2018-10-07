@@ -23,9 +23,9 @@ layout: "base"
     <div class="card">
         <header class="post-header">
             <h1 class="title ft-black">{{ page.title }}</h1>
-            <p class="info ft-black-sec">
-                <a class="category" href="/category/{{ page.category | downcase }}">{{ page.category }}</a> · <span class="date">{{ page.date | date:'%Y-%m-%d %H:%M'}}</span>
-            </p>
+            {% if page.date %}
+            <p class="info ft-black-sec"><a class="category" href="/category/{{ page.category | downcase }}">{{ page.category }}</a> · <span class="date">{{ page.date | date:'%Y-%m-%d %H:%M'}}</span></p>
+            {% endif %}
         </header>
         <article class="article">{{ content }}</article>
 
