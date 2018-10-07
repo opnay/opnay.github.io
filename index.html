@@ -3,7 +3,7 @@ layout: "base"
 title: "OPNay's Lab"
 ---
 <section id="profile" class="card center">
-    <div class="block">
+    <div class="block first">
         <img class="profile" src="/image/profile.png" />
         <div class="name">OPNay</div>
         <div class="social flex">
@@ -12,7 +12,6 @@ title: "OPNay's Lab"
             {% endfor %}
         </div>
     </div>
-    <hr>
 	<div class="block vertical">
 		{% for menu in site.data.side_menu %}
 		<a class="link ft-black" href="{{ menu.href }}">
@@ -24,6 +23,7 @@ title: "OPNay's Lab"
     <style>
         #profile {margin:0; width:320px; text-align:center;}
         #profile .block {padding:16px;}
+        #profile .block.first {border-bottom:1px solid rgba(0,0,0,0.12);}
         #profile .profile {display:block; margin:0 auto 16px; width:128px; height:128px; border-radius:50%;}
         #profile .name {margin-bottom:16px; font-size:32px;}
         #profile .social {justify-content:space-around;}
