@@ -9,8 +9,9 @@ html {
 	letter-spacing:0.01em;
 }
 html, body {width:100%; height:100%;}
-label, blockquote, pre, code {font-family:inherit;}
+label, blockquote {font-family:inherit;}
 button, input, select, textarea {font-family:inherit; font-size:inherit; line-height:inherit;}
+code, kbd, pre, samp {font-family:Consolas,monospace;}
 
 p {margin-bottom:8px;}
 article > p {line-height:1.5;}
