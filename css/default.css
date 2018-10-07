@@ -13,8 +13,8 @@ label, blockquote {font-family:inherit;}
 button, input, select, textarea {font-family:inherit; font-size:inherit; line-height:inherit;}
 code, kbd, pre, samp {font-family:Consolas,monospace;}
 
-p {margin-bottom:8px;}
-article > p {line-height:1.5;}
+p {margin-bottom:24px;}
+article > p {line-height:1.6;}
 
 h1, h2, h3, h4, h5, h6 {font-weight:normal;}
 h1, h2, h3 {margin:18px 0 16px;}
