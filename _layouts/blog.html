@@ -22,7 +22,7 @@ layout: "base"
 <div class="content">
     <div class="card">
         <header class="post-header">
-            <p class="title ft-black">{{ page.title }}</p>
+            <h1 class="title ft-black">{{ page.title }}</h1>
             <p class="info ft-black-sec">
                 <a class="category" href="/category/{{ page.category | downcase }}">{{ page.category }}</a> · <span class="date">{{ page.date | date:'%Y-%m-%d %H:%M'}}</span>
             </p>
@@ -52,8 +52,8 @@ layout: "base"
 
 .content {padding:0 32px 32px; min-height:calc(100% - 256px);}
 .content .post-header {padding:16px 24px;}
-.content .post-header .title {font-size:24px;}
-.content .post-header .info {font-size:0.8rem;}
+.content .post-header .title {margin:0 0 8px;}
+.content .post-header .info {margin:0 0 12px; font-size:0.8rem;}
 .content .article {padding:8px 24px 16px;}
 
 #page_adsense {padding:16px 24px; text-align:center;}
