@@ -42,7 +42,7 @@ th, td {padding:4px 12px; line-height:1.6; font-size:0.9em;}
 th {background:#EEE;}
 
 blockquote {background:#f0f2f6; margin:12px 24px; padding:16px;}
-:not(pre) > code, kbd {background:#f0f2f6; margin:0 2px; padding:2px 6px; font-size:0.9em;}
+:not(pre) > code, kbd {background:#f0f2f6; margin:0 2px; padding:0 6px; font-size:0.9em;}
 pre {background:#f0f2f6; margin:12px 0; padding:16px; font-size:0.9em;}
 
 article img {max-width:100%;}
