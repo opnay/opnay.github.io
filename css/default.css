@@ -30,6 +30,7 @@ a, .accent {color:#03A9F4; text-decoration:none;}
 a:hover {text-decoration:underline;}
 
 ol, ul {margin:16px 0; padding-left:32px;}
+li {margin:0 0 4px; line-height:1.5;}
 
 hr {margin:16px 0; border:none; border-top:1px solid rgba(0,0,0,0.12);}
 
