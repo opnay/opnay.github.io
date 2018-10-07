@@ -24,6 +24,6 @@
 
 - name : "Immortal Kernel"
   type : "Android, Kernel"
-  href : "http://blog.opnay.com/134"
+  href : "/app/immortal-s4"
   date : "2017.09.12 (1.14)"
   desc : "Galaxy S4 LTE (S/K) 모델에서 사용할 수 있는 커스텀 커널입니다.<br>f2fs파일시스템 지원, IO 스케줄러 / 가버너 추가 등 여러가지 트윅과 기능을 적용한 커널입니다."
