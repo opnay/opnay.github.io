@@ -6,6 +6,9 @@ permalink: /:categories/:year:month-:slug
 
 exclude: ["CNAME","README.md"]
 
+# Opengraph
+twitter: "@opnay_dev"
+
 defaults:
   -
     scope:
