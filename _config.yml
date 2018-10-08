@@ -1,4 +1,5 @@
 layout: ""
+title: "OPNay Studio"
 url: "https://opnay.com"
 
 permalink: /:categories/:year:month-:slug
