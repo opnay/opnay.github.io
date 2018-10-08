@@ -3,6 +3,7 @@ layout: "blog"
 title: "시스템 예약종료 프로그램(Windows)"
 category: "Application"
 date: "2017.09.01 00:00"
+image: "/assets/app/shutdown-1.png"
 comments: true
 ads: true
 ---

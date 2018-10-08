@@ -3,6 +3,7 @@ layout: "blog"
 title: "Simplify2"
 category: "Tistory"
 date: "2018-03-07 00:26"
+image: "/assets/app/simplify2.png"
 comments: true
 ads: true
 ---
