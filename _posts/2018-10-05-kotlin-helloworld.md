@@ -1,10 +1,7 @@
 ---
-layout: "blog"
 title: "[Kotlin] HelloWorld"
 category: "Kotlin"
 date: "2018-10-05 01:57"
-comments: true
-ads: true
 ---
 Kotlin이란 언어는 JVM / JS / Native 세종류로 나눠집니다. 네이티브 실행파일(.exe 또는 Linux,OSX 실행파일, .so라이브러리 등..)쪽은 Kotlin Native이며, JS는 JavaScript로 컴파일되며, JVM은 Java언어로 컴파일됩니다.
 

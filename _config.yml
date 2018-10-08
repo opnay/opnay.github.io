@@ -20,3 +20,10 @@ defaults:
         light: "#6ec6ff"
         dark: "#0069c0"
       img_background: true
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: 'blog'
+      comments: true
+      ads: true

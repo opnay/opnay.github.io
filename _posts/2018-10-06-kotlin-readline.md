@@ -1,10 +1,7 @@
 ---
-layout: "blog"
 title: "Kotlin 콘솔에서 입력받는 3가지 방법"
 category: "Kotlin"
 date: "2018-10-06 00:45"
-comments: true
-ads: true
 ---
 Kotlin이란 언어는 Java의 클래스, 메소드가 대부분 사용이 가능한 언어입니다. 그런 Kotlin언어의 콘솔 프로그램에서 입력을 받는 방법 3가지를 소개하겠습니다.
 

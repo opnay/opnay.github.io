@@ -1,10 +1,7 @@
 ---
-layout: "blog"
 title: "[C++] Hello World!"
 category: "C++"
 date: "2018-08-27 23:14"
-comments: true
-ads: true
 ---
 C++은 기존 C언어의 문법에 객체지형의 특성까지 더해져 많은 기능을 지원하는 언어입니다. C언어를 배우셨던 분이라면 좀더 쉽게 배우시거나 때론 내용을 넘겨도 되는 부분도 있습니다.
 
