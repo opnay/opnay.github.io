@@ -27,3 +27,9 @@ defaults:
       layout: 'blog'
       comments: true
       ads: true
+  -
+    scope:
+      path: 'category'
+    values:
+      layout: 'category'
+      back: '/category'
