@@ -5,11 +5,13 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         {% for app in site.data.apps %}
+        {% unless app.href contains '://' %}
         <url>
             <loc>{{ site.url }}{{ app.href }}.html</loc>
             <lastmod>{{ app.date | date_to_xmlschema }}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
         </url>
+        {% endunless %}
         {% endfor %}
 </urlset>
