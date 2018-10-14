@@ -8,7 +8,7 @@ title: "OPNay's Lab"
         <div class="name">OPNay</div>
         <div class="social flex">
             {% for social in site.data.blog_social %}
-            <a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" /></a>
+            <a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" alt="{{ social.name }}"></a>
             {% endfor %}
         </div>
     </div>
