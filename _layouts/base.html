@@ -19,9 +19,11 @@
 		{% if page.layout == "blog" %}
 		<meta property="og:type" content="article">
 		<meta property="og:description" content="{{ page.content | markdownify | strip_html | truncatewords: 50 }}">
+		<meta property="description" content="{{ page.content | markdownify | strip_html | truncatewords: 50 }}">
 		{% else %}
 		<meta property="og:type" content="website">
 		<meta property="og:description" content="{{ page.title }}">
+		<meta property="description" content="{% if page.layout == 'category' %}{{ page.title }}에 해당하는 글{% else %}{{ site.desc }}{% endif %}">
 		{% endif %}
 		<!-- Twitter Card -->
 		<meta property="twitter:card" content="summary">
