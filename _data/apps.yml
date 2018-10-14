@@ -2,7 +2,7 @@
   type : "Web, Skin"
   href : "/app/simplify2"
   date : "2018.03.07 (v1)"
-  desc : "Tistory 스킨인 Simplify의 두번째 버전입니다. 1단형에 내용에만 집중할 수 있도록 다른 요소들을 최소화 했고, 아이콘으로된 링크들로 블로그의 메뉴를 한번에 알수 있도록 만들었습니다."
+  desc : "Tistory 스킨인 Simplify의 두번째 버전입니다. 블로그 형식중 1단형을 사용해 내용에만 집중할 수 있도록 다른 요소들을 최소화 했고, 아이콘으로된 링크들로 블로그의 메뉴를 한번에 알수 있도록 만들었습니다."
 
 - name : "시스템 예약 종료"
   type : "Windows, Application"
@@ -14,16 +14,16 @@
   type : "Web, Application"
   href : "/app/clock"
   date : "2017.06.29"
-  desc : "HTML, CSS, jQuery로 만들어진 디지털 시계입니다.<br>네이버 Whale 브라우저의 새 탭 페이지를 참고하여 만들었으며, 배경화면은 <em>unsplash</em>에 공개된 사진을 사용했습니다.<br>최초 공개 : 2017.06.28"
+  desc : "HTML, CSS, jQuery로 만들어진 디지털 시계입니다. 네이버 Whale 브라우저의 새 탭 페이지를 참고하여 만들었으며, 배경화면은 <em>unsplash</em>에 공개된 사진을 사용했습니다. 최초 공개 : 2017.06.28"
 
 - name : "Simplify"
   type : "Web, Skin"
   href : "http://blog.opnay.com/111"
   date : "2015.12.07 (1.4)"
-  desc : "Tistory 블로그에서 사용할 수 있는 블로그 스킨입니다.<br>머티리리얼 디자인 기반(?)으로 만들었으며, 최대한 사용하기 편하도록 고려하며 만들었습니다.<br>최초 공개 : 2015.06.14"
+  desc : "Tistory 블로그에서 사용할 수 있는 블로그 스킨입니다. 머티리리얼 디자인 기반으로 만들었으며, 최대한 사용하기 편하도록 고려하며 만들었습니다. 최초 공개 : 2015.06.14"
 
 - name : "Immortal Kernel"
   type : "Android, Kernel"
   href : "/app/immortal-s4"
   date : "2017.09.12 (1.14)"
-  desc : "Galaxy S4 LTE (S/K) 모델에서 사용할 수 있는 커스텀 커널입니다.<br>f2fs파일시스템 지원, IO 스케줄러 / 가버너 추가 등 여러가지 트윅과 기능을 적용한 커널입니다."
+  desc : "Galaxy S4 LTE (SHV-E300S/K) 모델에서 사용할 수 있는 커스텀 커널입니다. 오버클럭, IO 스케줄러 / 가버너 추가 및 조절, 파일시스템 추가 지원 등 여러가지 트윅과 기능을 적용한 커널입니다."
