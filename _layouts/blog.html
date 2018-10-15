@@ -3,19 +3,35 @@ layout: "base"
 ---
 <div class="pg-header">
     <nav class="nav">
-        <a class="no_deco ft-white owner" href="https://opnay.com">
-            <img src="/image/profile.png" alt="Profile" class="profile">
-            <p class="title">OPNay</p>
-        </a>
-        <div class="pg-menu right">
-            <a class="link no_deco" href="https://facebook.com/opnay"><img alt="facebook" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTcsMlYySDE3VjZIMTVDMTQuMzEsNiAxNCw2LjgxIDE0LDcuNVYxMEgxNEwxNywxMFYxNEgxNFYyMkgxMFYxNEg3VjEwSDEwVjZBNCw0IDAgMCwxIDE0LDJIMTdaIi8+Cjwvc3ZnPg=="></a>
-            <a class="link no_deco" href="https://twitter.com/opnay_dev"><img alt="twitter" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMjIuNDYsNkMyMS42OSw2LjM1IDIwLjg2LDYuNTggMjAsNi42OUMyMC44OCw2LjE2IDIxLjU2LDUuMzIgMjEuODgsNC4zMUMyMS4wNSw0LjgxIDIwLjEzLDUuMTYgMTkuMTYsNS4zNkMxOC4zNyw0LjUgMTcuMjYsNCAxNiw0QzEzLjY1LDQgMTEuNzMsNS45MiAxMS43Myw4LjI5QzExLjczLDguNjMgMTEuNzcsOC45NiAxMS44NCw5LjI3QzguMjgsOS4wOSA1LjExLDcuMzggMyw0Ljc5QzIuNjMsNS40MiAyLjQyLDYuMTYgMi40Miw2Ljk0QzIuNDIsOC40MyAzLjE3LDkuNzUgNC4zMywxMC41QzMuNjIsMTAuNSAyLjk2LDEwLjMgMi4zOCwxMEMyLjM4LDEwIDIuMzgsMTAgMi4zOCwxMC4wM0MyLjM4LDEyLjExIDMuODYsMTMuODUgNS44MiwxNC4yNEM1LjQ2LDE0LjM0IDUuMDgsMTQuMzkgNC42OSwxNC4zOUM0LjQyLDE0LjM5IDQuMTUsMTQuMzYgMy44OSwxNC4zMUM0LjQzLDE2IDYsMTcuMjYgNy44OSwxNy4yOUM2LjQzLDE4LjQ1IDQuNTgsMTkuMTMgMi41NiwxOS4xM0MyLjIyLDE5LjEzIDEuODgsMTkuMTEgMS41NCwxOS4wN0MzLjQ0LDIwLjI5IDUuNywyMSA4LjEyLDIxQzE2LDIxIDIwLjMzLDE0LjQ2IDIwLjMzLDguNzlDMjAuMzMsOC42IDIwLjMzLDguNDIgMjAuMzIsOC4yM0MyMS4xNiw3LjYzIDIxLjg4LDYuODcgMjIuNDYsNloiLz4KPC9zdmc+"></a>
-            <a class="link no_deco" href="https://github.com/opnay"><img alt="github" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjM4IDguMTc1OThDMjAuNTQgNy43NzU5OCAyMS4wNiA2LjE4NTk4IDIwLjIxIDQuMDM1OThDMjAuMjEgNC4wMzU5OCAxOC45IDMuNjQ1OTggMTUuOTEgNS42NDU5OEMxNC42NiA1LjMxNTk4IDEzLjMzIDUuMjY1OTggMTIgNS4yNjU5OEMxMC42OCA1LjI2NTk4IDkuMzQgNS4zMTU5OCA4LjA5IDUuNjQ1OThDNS4xIDMuNjE1OTggMy43OSA0LjAzNTk4IDMuNzkgNC4wMzU5OEMyLjk0IDYuMTg1OTggMy40NiA3Ljc3NTk4IDMuNjMgOC4xNzU5OEMyLjYxIDkuMjY1OTggMiAxMC42NDYgMiAxMi4zNjZDMiAxOC44MDYgNi4xNiAyMC4yNTYgMTIgMjAuMjU2QzE3Ljc5IDIwLjI1NiAyMiAxOC44MDYgMjIgMTIuMzY2QzIyIDEwLjY0NiAyMS4zOSA5LjI2NTk4IDIwLjM4IDguMTc1OThaTTEyIDE5LjAyNkM3Ljg4IDE5LjAyNiA0LjUzIDE4LjgzNiA0LjUzIDE0LjgzNkM0LjUzIDEzLjg4NiA1IDEyLjk4NiA1LjggMTIuMjU2QzcuMTQgMTEuMDI2IDkuNDMgMTEuNjc2IDEyIDExLjY3NkMxNC41OSAxMS42NzYgMTYuODUgMTEuMDI2IDE4LjIgMTIuMjU2QzE5IDEyLjk4NiAxOS41IDEzLjg3NiAxOS41IDE0LjgzNkMxOS41IDE4LjgyNiAxNi4xMyAxOS4wMjYgMTIgMTkuMDI2Wk04Ljg2IDEyLjc2NkM4LjA0IDEyLjc2NiA3LjM2IDEzLjc2NiA3LjM2IDE0Ljk4NkM3LjM2IDE2LjIxNiA4LjA0IDE3LjIyNiA4Ljg2IDE3LjIyNkM5LjY5IDE3LjIyNiAxMC4zNiAxNi4yMjYgMTAuMzYgMTQuOTg2QzEwLjM2IDEzLjc1NiA5LjY5IDEyLjc2NiA4Ljg2IDEyLjc2NlpNMTUuMTQgMTIuNzY2QzE0LjMxIDEyLjc2NiAxMy42NCAxMy43NTYgMTMuNjQgMTQuOTg2QzEzLjY0IDE2LjIyNiAxNC4zMSAxNy4yMjYgMTUuMTQgMTcuMjI2QzE1Ljk2IDE3LjIyNiAxNi42NCAxNi4yMjYgMTYuNjQgMTQuOTg2QzE2LjY0IDEzLjc1NiAxNiAxMi43NjYgMTUuMTQgMTIuNzY2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="></a>
-            <div class="v_hr"></div>
-            <!-- Working...
-            <a class="search no_deco"><img alt="search" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjUgMTRIMTQuNzFMMTQuNDMgMTMuNzNDMTUuNDEgMTIuNTkgMTYgMTEuMTEgMTYgOS41QzE2IDUuOTEgMTMuMDkgMyA5LjUgM0M1LjkxIDMgMyA1LjkxIDMgOS41QzMgMTMuMDkgNS45MSAxNiA5LjUgMTZDMTEuMTEgMTYgMTIuNTkgMTUuNDEgMTMuNzMgMTQuNDNMMTQgMTQuNzFWMTUuNUwxOSAyMC40OUwyMC40OSAxOUwxNS41IDE0Wk05LjUgMTRDNy4wMSAxNCA1IDExLjk5IDUgOS41QzUgNy4wMSA3LjAxIDUgOS41IDVDMTEuOTkgNSAxNCA3LjAxIDE0IDkuNUMxNCAxMS45OSAxMS45OSAxNCA5LjUgMTRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"></a>
-            -->
-            <a class="i-menu no_deco" href="/category"><img alt="menu" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiIGZpbGw9IiNGRkZGRkYiLz4KPC9zdmc+"></a>
+        <div class="pg-info">
+            <a class="no_deco ft-white owner" href="https://opnay.com">
+                <img src="/image/profile.png" alt="Profile" class="profile">
+                <p class="title">OPNay</p>
+            </a>
+            <div class="pg-menu right">
+                <a class="link no_deco" href="https://facebook.com/opnay"><img alt="facebook" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTcsMlYySDE3VjZIMTVDMTQuMzEsNiAxNCw2LjgxIDE0LDcuNVYxMEgxNEwxNywxMFYxNEgxNFYyMkgxMFYxNEg3VjEwSDEwVjZBNCw0IDAgMCwxIDE0LDJIMTdaIi8+Cjwvc3ZnPg=="></a>
+                <a class="link no_deco" href="https://twitter.com/opnay_dev"><img alt="twitter" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMjIuNDYsNkMyMS42OSw2LjM1IDIwLjg2LDYuNTggMjAsNi42OUMyMC44OCw2LjE2IDIxLjU2LDUuMzIgMjEuODgsNC4zMUMyMS4wNSw0LjgxIDIwLjEzLDUuMTYgMTkuMTYsNS4zNkMxOC4zNyw0LjUgMTcuMjYsNCAxNiw0QzEzLjY1LDQgMTEuNzMsNS45MiAxMS43Myw4LjI5QzExLjczLDguNjMgMTEuNzcsOC45NiAxMS44NCw5LjI3QzguMjgsOS4wOSA1LjExLDcuMzggMyw0Ljc5QzIuNjMsNS40MiAyLjQyLDYuMTYgMi40Miw2Ljk0QzIuNDIsOC40MyAzLjE3LDkuNzUgNC4zMywxMC41QzMuNjIsMTAuNSAyLjk2LDEwLjMgMi4zOCwxMEMyLjM4LDEwIDIuMzgsMTAgMi4zOCwxMC4wM0MyLjM4LDEyLjExIDMuODYsMTMuODUgNS44MiwxNC4yNEM1LjQ2LDE0LjM0IDUuMDgsMTQuMzkgNC42OSwxNC4zOUM0LjQyLDE0LjM5IDQuMTUsMTQuMzYgMy44OSwxNC4zMUM0LjQzLDE2IDYsMTcuMjYgNy44OSwxNy4yOUM2LjQzLDE4LjQ1IDQuNTgsMTkuMTMgMi41NiwxOS4xM0MyLjIyLDE5LjEzIDEuODgsMTkuMTEgMS41NCwxOS4wN0MzLjQ0LDIwLjI5IDUuNywyMSA4LjEyLDIxQzE2LDIxIDIwLjMzLDE0LjQ2IDIwLjMzLDguNzlDMjAuMzMsOC42IDIwLjMzLDguNDIgMjAuMzIsOC4yM0MyMS4xNiw3LjYzIDIxLjg4LDYuODcgMjIuNDYsNloiLz4KPC9zdmc+"></a>
+                <a class="link no_deco" href="https://github.com/opnay"><img alt="github" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjM4IDguMTc1OThDMjAuNTQgNy43NzU5OCAyMS4wNiA2LjE4NTk4IDIwLjIxIDQuMDM1OThDMjAuMjEgNC4wMzU5OCAxOC45IDMuNjQ1OTggMTUuOTEgNS42NDU5OEMxNC42NiA1LjMxNTk4IDEzLjMzIDUuMjY1OTggMTIgNS4yNjU5OEMxMC42OCA1LjI2NTk4IDkuMzQgNS4zMTU5OCA4LjA5IDUuNjQ1OThDNS4xIDMuNjE1OTggMy43OSA0LjAzNTk4IDMuNzkgNC4wMzU5OEMyLjk0IDYuMTg1OTggMy40NiA3Ljc3NTk4IDMuNjMgOC4xNzU5OEMyLjYxIDkuMjY1OTggMiAxMC42NDYgMiAxMi4zNjZDMiAxOC44MDYgNi4xNiAyMC4yNTYgMTIgMjAuMjU2QzE3Ljc5IDIwLjI1NiAyMiAxOC44MDYgMjIgMTIuMzY2QzIyIDEwLjY0NiAyMS4zOSA5LjI2NTk4IDIwLjM4IDguMTc1OThaTTEyIDE5LjAyNkM3Ljg4IDE5LjAyNiA0LjUzIDE4LjgzNiA0LjUzIDE0LjgzNkM0LjUzIDEzLjg4NiA1IDEyLjk4NiA1LjggMTIuMjU2QzcuMTQgMTEuMDI2IDkuNDMgMTEuNjc2IDEyIDExLjY3NkMxNC41OSAxMS42NzYgMTYuODUgMTEuMDI2IDE4LjIgMTIuMjU2QzE5IDEyLjk4NiAxOS41IDEzLjg3NiAxOS41IDE0LjgzNkMxOS41IDE4LjgyNiAxNi4xMyAxOS4wMjYgMTIgMTkuMDI2Wk04Ljg2IDEyLjc2NkM4LjA0IDEyLjc2NiA3LjM2IDEzLjc2NiA3LjM2IDE0Ljk4NkM3LjM2IDE2LjIxNiA4LjA0IDE3LjIyNiA4Ljg2IDE3LjIyNkM5LjY5IDE3LjIyNiAxMC4zNiAxNi4yMjYgMTAuMzYgMTQuOTg2QzEwLjM2IDEzLjc1NiA5LjY5IDEyLjc2NiA4Ljg2IDEyLjc2NlpNMTUuMTQgMTIuNzY2QzE0LjMxIDEyLjc2NiAxMy42NCAxMy43NTYgMTMuNjQgMTQuOTg2QzEzLjY0IDE2LjIyNiAxNC4zMSAxNy4yMjYgMTUuMTQgMTcuMjI2QzE1Ljk2IDE3LjIyNiAxNi42NCAxNi4yMjYgMTYuNjQgMTQuOTg2QzE2LjY0IDEzLjc1NiAxNiAxMi43NjYgMTUuMTQgMTIuNzY2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="></a>
+                <div class="v_hr"></div>
+                <!-- Working...
+                <a class="search no_deco"><img alt="search" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjUgMTRIMTQuNzFMMTQuNDMgMTMuNzNDMTUuNDEgMTIuNTkgMTYgMTEuMTEgMTYgOS41QzE2IDUuOTEgMTMuMDkgMyA5LjUgM0M1LjkxIDMgMyA1LjkxIDMgOS41QzMgMTMuMDkgNS45MSAxNiA5LjUgMTZDMTEuMTEgMTYgMTIuNTkgMTUuNDEgMTMuNzMgMTQuNDNMMTQgMTQuNzFWMTUuNUwxOSAyMC40OUwyMC40OSAxOUwxNS41IDE0Wk05LjUgMTRDNy4wMSAxNCA1IDExLjk5IDUgOS41QzUgNy4wMSA3LjAxIDUgOS41IDVDMTEuOTkgNSAxNCA3LjAxIDE0IDkuNUMxNCAxMS45OSAxMS45OSAxNCA5LjUgMTRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"></a>
+                -->
+                <a id="cat-btn" class="i-menu no_deco" href="#"><img alt="menu" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiIGZpbGw9IiNGRkZGRkYiLz4KPC9zdmc+"></a>
+            </div>
+            <script>document.getElementById('cat-btn').onclick = function () {
+                let nav = document.getElementsByClassName('nav')[0]
+                let tmp = nav.className;
+                if (tmp.indexOf('extend') >= 0) tmp = tmp.replace('extend', '');
+                else tmp += ' extend'; 
+                nav.className = tmp.trim();
+            }
+            </script>
+        </div>
+        <div class="pg-category">
+            <a class="category" href="/category/recent">최근글</a>
+            {% for category in site.categories %}
+            <a class="category{% if category[0] == page.category %} select{% endif %}" href="/category/{{ category[0] | downcase }}">{{ category[0] }}</a>
+            {% endfor %}
         </div>
     </nav>
 </div>
@@ -38,17 +54,24 @@ layout: "base"
 </div>
 <style>
 .pg-header {position:relative; padding:64px 32px;}
-.nav {background:rgba(0,0,0,0.5); padding:32px; border-radius:8px; width:100%; color:white; font-size:32px;}
+.nav {background:rgba(0,0,0,0.5); border-radius:8px; width:100%; max-height:128px; color:white; overflow:hidden; transition:max-height 0.2s;}
+.nav.extend {max-height:100%;}
 
+.nav .pg-info {padding:32px;}
 .nav .owner {display:inline-block;}
 .nav .profile {border-radius:50%; width:64px; height:64px; vertical-align:middle;}
-.nav .title {display:inline-block; margin:0 16px; vertical-align:middle;}
+.nav .title {display:inline-block; margin:0 16px; vertical-align:middle; font-size:32px;}
 .nav .pg-menu {padding:14px 0; max-height:64px; line-height:0; text-align:right;}
 .nav .pg-menu a {display:inline-block; margin:0 4px; padding:6px; width:36px; height:36px; text-align:center; cursor:pointer;}
 .nav .pg-menu img {width:24px; height:24px; vertical-align:middle;}
 
 .v_hr {display:inline-block; margin:0 8px; border-right:1px solid white; height:36px; vertical-align:top;}
 .no_deco:hover {text-decoration:none;}
+
+.nav .pg-category {padding-bottom:32px;}
+.nav .category {display:block; padding:16px 32px; font-size:24px; color:white;}
+.nav .category.select::before {content:'> ';}
+.nav .category.select::after {content:' <';}
 
 .content {padding:0 32px 32px; min-height:calc(100% - 256px);}
 .content .post-header {padding:16px 24px;}
