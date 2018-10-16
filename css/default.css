@@ -48,15 +48,14 @@ pre {background:#f0f2f6; margin:12px 0; padding:16px; font-size:0.9em;}
 article p {padding:0 24px; line-height:1.6;}
 article h1, article h2,
 article h3, article h4,
-article h5, article h6 {padding:0 24px;}
+article h5, article h6,
+article dl, article figure {padding:0 24px;}
 article pre {margin: 24px 0; padding:24px;}
 article img {max-width:100%;}
 article ul, article ol {margin:24px 0; padding:0 24px 0 42px;}
 article ul ul, article ul ol,
 article ol ul, article ol ol {margin:8px 0; padding-left:24px;}
 article blockquote p {padding:0;}
-article dl {padding:0 24px;}
-article figure {padding:0 24px;}
 article legend {margin:0 0 8px; padding:0 24px;}
 article video {width:100%; height:auto;}
 article audio {padding:0 24px; width:calc(100% - 48px);}
