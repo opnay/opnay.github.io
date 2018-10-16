@@ -14,7 +14,6 @@ button, input, select, textarea {font-family:inherit; font-size:inherit; line-he
 code, kbd, pre, samp {font-family:Consolas,monospace;}
 
 p {margin-bottom:24px;}
-article > p {line-height:1.6;}
 
 h1, h2, h3, h4, h5, h6 {font-weight:normal;}
 h1, h2, h3 {margin:18px 0 16px;}
@@ -31,7 +30,7 @@ a:hover {text-decoration:underline;}
 
 ol, ul {margin:16px 0; padding-left:32px;}
 ol ol, ol ul, ul ul, ul ol {margin:8px 0;}
-li {margin:0 0 4px; line-height:1.6;}
+li {margin:0 0 8px; line-height:1.6;}
 
 hr {margin:16px 0; border:none; border-top:1px solid rgba(0,0,0,0.12);}
 
@@ -45,7 +44,26 @@ blockquote {background:#f0f2f6; margin:12px 24px; padding:16px;}
 :not(pre) > code, kbd {background:#f0f2f6; margin:0 2px; padding:0 6px; font-size:0.9em;}
 pre {background:#f0f2f6; margin:12px 0; padding:16px; font-size:0.9em;}
 
+/* Article */
+article p {padding:0 24px; line-height:1.6;}
+article h1, article h2,
+article h3, article h4,
+article h5, article h6 {padding:0 24px;}
+article pre {margin: 24px 0; padding:24px;}
 article img {max-width:100%;}
+article ul, article ol {margin:24px 0; padding:0 24px 0 42px;}
+article ul ul, article ul ol,
+article ol ul, article ol ol {margin:8px 0; padding-left:24px;}
+article blockquote p {padding:0;}
+article dl {padding:0 24px;}
+article figure {padding:0 24px;}
+article legend {margin:0 0 8px; padding:0 24px;}
+article video {width:100%; height:auto;}
+article audio {padding:0 24px; width:calc(100% - 48px);}
+
+/* Gist */
+.gist-file {border:none;}
+.gist-data {border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
 
 /*
  * Class
