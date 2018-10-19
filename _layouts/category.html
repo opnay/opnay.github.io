@@ -11,9 +11,21 @@ layout: "lists"
 <section class="list">
     {% for post in site.categories[cur] %}
     <a class="item ft-black" href="{{ post.url }}">
+        {% if post.image %}
+        <img class="item-thumb" src="{{ post.image }}" alt="{{ post.title }}">
+        <div class="item-info">
+            <h1 class="title">{{ post.title }}</h1>
+            <p class="desc ft-black-sec">{{ post.content | strip_html | xml_escape }}</p>
+        </div>
+        {% else %}
         <h1 class="title">{{ post.title }}</h1>
         <p class="desc ft-black-sec">{{ post.content | strip_html | xml_escape }}</p>
+        {% endif %}
     </a>
     {% endfor %}
+    <style>
+    .item-thumb {margin-right:12px; border-radius:50%; width:94px; vertical-align:middle;}
+    .item-info {display:inline-block; width:calc(100% - 112px); vertical-align:middle;}
+    </style>
 </section>
 {% endif %}
