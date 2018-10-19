@@ -2,7 +2,10 @@
 title: "Kotlin 콘솔에서 입력받는 3가지 방법"
 category: "Kotlin"
 date: "2018-10-06 00:45"
+image: "/assets/thumb/kotlin.svg"
 ---
+<p style="text-align:center;"><img src="http://localhost:4000/assets/kotlin/kotlin.svg" alt="Kotlin" style="height:150px;"></p>
+
 Kotlin이란 언어는 Java의 클래스, 메소드가 대부분 사용이 가능한 언어입니다. 그런 Kotlin언어의 콘솔 프로그램에서 입력을 받는 방법 3가지를 소개하겠습니다.
 
 ## 1. readLine

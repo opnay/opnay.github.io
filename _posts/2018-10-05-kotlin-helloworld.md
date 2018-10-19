@@ -2,8 +2,11 @@
 title: "[Kotlin] HelloWorld"
 category: "Kotlin"
 date: "2018-10-05 01:57"
+image: "{{ site.url }}/assets/thumb/kotlin.svg"
 ---
-Kotlin이란 언어는 JVM / JS / Native 세종류로 나눠집니다. 네이티브 실행파일(.exe 또는 Linux,OSX 실행파일, .so라이브러리 등..)쪽은 Kotlin Native이며, JS는 JavaScript로 컴파일되며, JVM은 Java언어로 컴파일됩니다.
+<p style="text-align:center;"><img src="http://localhost:4000/assets/kotlin/kotlin.svg" alt="Kotlin" style="height:150px;"></p>
+
+Kotlin이란 언어는 IntelliJ IDEA라는 개발환경을 만든 Jetbrain에서 고안한 언어이고, 그 종류는 JVM / JS / Native 세종류로 나눠집니다. Native는 네이티브 실행파일(Windows, Linux, OSX 실행파일, .so라이브러리 등)이며, JS는 JavaScript로, JVM은 Java언어로 컴파일됩니다.
 
 ## Kotlin JVM
 JVM은 Java Virtual Machine의 약자이며, Java언어를 사용할때 배울수 있는 가상머신의 일종입니다. (여기서는 간단한 과정만 설명하겠습니다.)
