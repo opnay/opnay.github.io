@@ -11,8 +11,16 @@ title: "Posts"
 <section class="list">
     {% for post in site.posts limit:20 %}
     <a class="item ft-black" href="{{ post.url }}">
+        {% if post.image %}
+        <img class="item-thumb" src="{{ post.image }}" alt="{{ post.title }}">
+        <div class="item-info">
+            <h1 class="title">{{ post.title }}</h1>
+            <p class="desc ft-black-sec">{{ post.content | strip_html | xml_escape }}</p>
+        </div>
+        {% else %}
         <h1 class="title">{{ post.title }}</h1>
         <p class="desc ft-black-sec">{{ post.content | strip_html | xml_escape }}</p>
+        {% endif %}
     </a>
     {% endfor %}
 </section>
