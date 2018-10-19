@@ -61,6 +61,7 @@ article video {width:100%; height:auto;}
 article audio {padding:0 24px; width:calc(100% - 48px);}
 
 /* Gist */
+article .gist {margin:24px 0;}
 article .gist .gist-file {border:none;}
 article .gist .gist-data {border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
 article .gist .gist-meta {border-bottom:1px solid #ddd;}
