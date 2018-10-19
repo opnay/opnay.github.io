@@ -2,7 +2,7 @@
 title: "[Kotlin] HelloWorld"
 category: "Kotlin"
 date: "2018-10-05 01:57"
-image: "{{ site.url }}/assets/thumb/kotlin.svg"
+image: "/assets/thumb/kotlin.svg"
 ---
 <p style="text-align:center;"><img src="http://localhost:4000/assets/kotlin/kotlin.svg" alt="Kotlin" style="height:150px;"></p>
 
