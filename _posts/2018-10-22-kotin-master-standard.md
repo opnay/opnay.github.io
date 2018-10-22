@@ -13,8 +13,6 @@ image: "/assets/thumb/kotlin.svg"
 이들의 차이점과 어떤걸 선택해야하는지 명확하게 구별하는 쉬운방법을 소개하겠습니다.
 
 # 스코프 함수
-The functions that I’ll focus on is run, with, T.run, T.let, T.also and T.apply.
-I call them scoping functions as I view their main functionality as provide an inner scope for the caller function.
 저는 *run, with, T.run, T.let, T.also* 그리고 *T.apply*에 초점을 맞췄습니다. 저는 호출 함수의 내부 스코프를 제공하는 것처럼 주요기능을 볼때 **스코프 함수**라 부릅니다.
 
 스코프 함수인 run함수를 쉬운방법으로 설명해드리겠습니다.
@@ -106,7 +104,7 @@ I call them scoping functions as I view their main functionality as provide an i
 # 함수 선택
 명백히 이제 3개의 속성으로, 함수들을 카테고리로 나눌 수 있습니다. 그리고 이것으로, 우리가 필요할때 어떤 함수를 사용해야 하는지 결정을 도와줄 수 있는 아래와 같은 결정 트리 형식을 만들 수 있습니다.
 
-<p style="text-align:center;"><img src="{{ site.url }}/assets/kotlin/function_choose_flowchart.png" alt="Kotlin" style="height:150px;"></p>
+<p style="text-align:center;"><img src="{{ site.url }}/assets/kotlin/function_choose_flowchart.png" alt="Kotlin" style="width:100%;"></p>
 
 ---
 
