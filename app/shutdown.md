@@ -8,7 +8,7 @@ comments: true
 ads: true
 ---
 
-<p class="image center"><img alt="실행직후" src="/assets/app/shutdown-1.png"/><img alt="작동중" src="/assets/app/shutdown-1.png"/></p>
+<p class="image center"><img alt="실행직후" src="/assets/app/shutdown-1.png"><img alt="작동중" src="/assets/app/shutdown-1.png"></p>
 - OS : Windows
 
 윈도우 프로그래밍 연습용으로 만들어본 컴퓨터 예약종료 프로그램입니다.

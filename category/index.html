@@ -4,18 +4,13 @@ title: "Category"
 back: "/"
 ---
 <section id="category" class="list">
-    <a class="item ft-black" href="/category/recent">
-        <h1 class="title">최근 글</h1>
-    </a>
+    <a class="item ft-black" href="/category/recent">최근 글</a>
     {% for category in site.categories %}
-    <a class="item ft-black" href="/category/{{ category[0] | downcase }}">
-        <h1 class="title">{{ category[0] }}</h1>
-    </a>
+    <a class="item ft-black" href="/category/{{ category[0] | downcase }}">{{ category[0] }}</a>
     {% endfor %}
 </section>
 <style>
 #category {margin:16px 8px; text-align:center;}
-#category .title {margin:0;}
 #category .item {
     display:inline-block; margin:0 8px; border-radius:4px; padding:8px 14px; overflow:hidden;
     transition:box-shadow .1s ease-in, background .1s ease-in, color .1s ease-in;

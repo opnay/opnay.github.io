@@ -2,20 +2,20 @@
 layout: "base"
 title: "OPNay's Lab"
 ---
-<section id="profile" class="card center">
+<div id="profile" class="card center">
     <div class="block first">
-        <img class="profile" src="/image/profile.png" />
+        <img class="profile" src="/image/profile.png" alt="Profile">
         <div class="name">OPNay</div>
         <div class="social flex">
             {% for social in site.data.blog_social %}
-            <a href="{{ social.href }}"><img width="24px" height="24px" src="data:image/svg+xml;base64,{{ social.icon }}" alt="{{ social.name }}"></a>
+            <a href="{{ social.href }}"><img width="24" height="24" src="data:image/svg+xml;base64,{{ social.icon }}" alt="{{ social.name }}"></a>
             {% endfor %}
         </div>
     </div>
 	<div class="block vertical">
 		{% for menu in site.data.blog_menu %}
 		<a class="link ft-black" href="{{ menu.href }}">
-			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}" />
+			<img class="icon" src="{{ menu.icon }}" alt="{{ menu.name }}">
 			<span class="title">{{ menu.name }}</span>
 		</a>
 		{% endfor %}
@@ -35,4 +35,4 @@ title: "OPNay's Lab"
         #profile .link .icon {margin-right:8px; width:24px; height:24px; vertical-align:middle;}
         #profile .link .title {vertical-align:middle;}
     </style>
-</section>
+</div>
