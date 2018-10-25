@@ -5,7 +5,7 @@
 {% for app in site.data.apps %}
 {% unless app.href contains '://' %}
     <url>
-        <loc>{{ site.url }}{{ app.href }}.html</loc>
+        <loc>{{ site.url }}{{ app.href }}</loc>
     </url>
 {% endunless %}
 {% endfor %}
