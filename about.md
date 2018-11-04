@@ -17,8 +17,9 @@ Email : opnayn@gmail.com
 - Java / Kotlin
 - Android
 - HTML / CSS
-- jQuery
-- Node.js
+- Javascript
+  - jQuery
+  - Node.js
 
 ### Language
 - Korean **(Native)**
@@ -27,7 +28,7 @@ Email : opnayn@gmail.com
 ## Devices
 ### Android
 - Galaxy Player 4.0 (YP-GB1)
-- Galaxy S4 LTE (SHV-E300S/K)
+- Galaxy S4 LTE (SHV-E300S)
 - Galaxy S6 (SM-G920S) **(Using)**
 
 ### Board
@@ -41,8 +42,8 @@ Email : opnayn@gmail.com
 - Galaxy S4 LTE (SHV-E300S/K) / ❌ EOL
 
 ### Kotlin
-- Todo (for Android)
-- Kotlin Algorithm
+- Todo (for Android) [(Github)](https://github.com/opnay/Todo) [(Playstore)](https://play.google.com/store/apps/details?id=com.opnay.todo)
+- Kotlin Algorithm [(Github)](https://github.com/opnay/KotlinAlgorithm)
 
 ### Web
 - Web Digital Clock
@@ -54,11 +55,11 @@ Email : opnayn@gmail.com
 - Github Blog (2016.07 ~ )
 
 ### Contribute
-- Unofficial LineageOS 14.1 (Galaxy S4 Exynos)
-    - Fix LTE
-- Status (Android)
+- [Unofficial LineageOS 14.1 (Galaxy S4 Exynos)](https://forum.xda-developers.com/galaxy-s4/i9500-orig-develop/rom-lineageos-14-1-samsung-galaxy-s4-t3586561)
+    - Fix LTE data and call (Not fully)
+- [Status (Android)](https://github.com/fennifith/Status)
     - Translate to Korean
-- Imageburner (Elementary OS)
+- [Imageburner (Elementary OS)](https://github.com/artemanufrij/imageburner)
     - Translate to Korean
 
 [See more](https://opnay.com/app)
