@@ -7,6 +7,11 @@ module.exports = {
         allExtensions: true,
       },
     },
-    `gatsby-plugin-eslint`,
+    {
+      resolve: `gatsby-plugin-eslint`,
+      options: {
+        test: /\.jsx?$|\.tsx?$/,
+      },
+    },
   ],
 };
