@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
@@ -18,10 +18,14 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
     "eslint-config-react-app": "^5.0.1",
     "eslint-plugin-react-hooks": "^1.7.0",
     "gatsby-plugin-eslint": "^2.0.5",
-    "prettier": "^1.18.2"
+    "gatsby-plugin-typescript": "^2.1.2",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
   },
   "repository": {
     "type": "git",

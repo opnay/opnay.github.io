@@ -1,3 +1,12 @@
 module.exports = {
-  plugins: [`gatsby-plugin-eslint`],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true,
+        allExtensions: true,
+      },
+    },
+    `gatsby-plugin-eslint`,
+  ],
 };
