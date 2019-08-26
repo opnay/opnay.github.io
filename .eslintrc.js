@@ -17,6 +17,9 @@ module.exports = {
     indent: ['error', 2],
     '@typescript-eslint/indent': 'off',
 
+    quotes: 'off',
+    'jsx-quotes': ['error', 'prefer-double'],
+
     'no-unused-vars': 'off',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
