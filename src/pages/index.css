@@ -1,0 +1,81 @@
+body {
+  background-color: #f0f1f3;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.main::before,
+.main::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  content: '';
+  display: block;
+}
+
+.main::before {
+  background-image: url('/images/debby-hudson-FsrRDNVBS2Y-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+.main::after {
+  background: rgba(255, 255, 255, 0.36);
+}
+
+.main .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .profile img {
+  width: 128px;
+  height: 128px;
+}
+
+.main .profile p {
+  margin: 16px 0 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.main .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 64px 0 0;
+}
+
+.main .menu .button {
+  display: block;
+  margin: 6px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 8px;
+  width: 230px;
+
+  font-size: 24px;
+}
