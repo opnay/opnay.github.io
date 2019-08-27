@@ -1,0 +1,14 @@
+.button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  font: inherit;
+  cursor: pointer;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+  text-decoration: underline;
+}
