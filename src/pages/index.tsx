@@ -13,6 +13,7 @@ export default () => (
       🧰 현재 공사중입니다...
     </Button>
     <div className={'menu'}>
+      <Button href="https://blog.opnay.com">Tistory</Button>
       <Button href="blog">Blog</Button>
       <Button href="https://github.com/opnay">Github</Button>
     </div>
