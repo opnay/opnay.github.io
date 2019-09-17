@@ -1,0 +1,62 @@
+.header {
+  background: rgba(255, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100vw;
+}
+
+.header .profile {
+  width: 64px;
+  height: 64px;
+}
+
+.header h1 {
+  flex: 1;
+  text-align: center;
+}
+
+.blog .content {
+  margin: 0 auto;
+  width: 768px;
+}
+
+.header > .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.blog > .content {
+  margin-top: 200px;
+}
+
+.blog > .content > .button {
+  display: block;
+  padding: 24px 18px;
+  width: 100%;
+  text-align: left;
+}
+
+.blog > .content > .button + .button {
+  border-top: 1px solid #ddd;
+}
+
+.blog > .content > .button p {
+  margin: 0;
+}
+
+.blog > .content > .button span {
+  font-size: 0.8em;
+}
+
+.blog > .content > .button:hover span {
+  text-decoration: none;
+}
+
+.blog > .content > .button .category {
+  color: var(--color-primary);
+}
