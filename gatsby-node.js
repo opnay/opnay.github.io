@@ -49,6 +49,12 @@ exports.createPages = async ({ graphql, actions }) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1];
     const next = index === 0 ? null : posts[index - 1];
 
+    if (!post.frontmatter.template) {
+      throw new Error(
+        'Markdown page should have existed `template` on frontmatter.'
+      );
+    }
+
     createPage({
       path: post.fields.slug,
       component: _(templates, post.frontmatter.template + '.tsx'),
