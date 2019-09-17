@@ -2,7 +2,7 @@ body {
   background-color: #f0f1f3;
 }
 
-.main {
+.main-page {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -18,8 +18,8 @@ body {
   height: 100vh;
 }
 
-.main::before,
-.main::after {
+.main-page::before,
+.main-page::after {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -31,36 +31,36 @@ body {
   display: block;
 }
 
-.main::before {
+.main-page::before {
   background-image: url('/images/debby-hudson-FsrRDNVBS2Y-unsplash.jpg');
   background-position: center;
   background-size: cover;
   filter: blur(8px);
 }
 
-.main::after {
+.main-page::after {
   background: rgba(255, 255, 255, 0.36);
 }
 
-.main .profile {
+.main-page .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.main .profile img {
+.main-page .profile img {
   width: 128px;
   height: 128px;
 }
 
-.main .profile p {
+.main-page .profile p {
   margin: 16px 0 0;
   font-weight: bold;
   font-size: 28px;
 }
 
-.main .desc {
+.main-page .desc {
   background: rgba(0, 0, 0, 0.5);
   margin: 16px 0 0;
   border-radius: 8px;
@@ -71,16 +71,16 @@ body {
   line-height: 2;
 }
 
-.main .menu {
+.main-page .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  margin: 64px 0 0;
+  margin: 32px 0 0;
 }
 
-.main .menu .button {
+.main-page .menu .button {
   display: block;
   margin: 6px;
   border: 2px solid #000;

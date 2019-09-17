@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '../components/atoms/Button';
 
 export default () => (
-  <div className={'main'}>
+  <div className={'main-page'}>
     <div className={'profile'}>
       <img src="/images/profile.png" alt="profile" />
       <p>OPNay</p>
