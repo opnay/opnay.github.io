@@ -60,6 +60,17 @@ body {
   font-size: 28px;
 }
 
+.main .desc {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 16px 0 0;
+  border-radius: 8px;
+  width: 240px;
+
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
+
 .main .menu {
   display: flex;
   flex-direction: column;
