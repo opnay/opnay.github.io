@@ -57,18 +57,19 @@ body {
 .main-page .profile p {
   margin: 16px 0 0;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 1.8em;
 }
 
 .main-page .desc {
   background: rgba(0, 0, 0, 0.5);
   margin: 16px 0 0;
   border-radius: 8px;
+  padding: 8px 0;
   width: 320px;
 
   color: white;
+  font-size: 1.1em;
   text-align: center;
-  line-height: 2;
 }
 
 .main-page .menu {
@@ -89,5 +90,5 @@ body {
   padding: 8px;
   width: 100%;
 
-  font-size: 24px;
+  font-size: 1.4em;
 }
