@@ -3,7 +3,7 @@ import './styles.css';
 import React from 'react';
 import { graphql } from 'gatsby';
 import { AllMarkdownRemarkData } from '../../types/Markdown';
-import Button from '../../components/atoms/Button';
+import Link from '../../components/atoms/Link';
 
 type HeaderProps = {
   title?: string;
@@ -43,13 +43,13 @@ export default (props: DefaultProps) => {
       console.log(i);
 
       return (
-        <Button key={slug} href={slug}>
+        <Link key={slug} href={slug}>
           <p>{i.frontmatter.title}</p>
           <div>
             <span>{i.frontmatter.category}</span>·
             <span>{i.frontmatter.date}</span>
           </div>
-        </Button>
+        </Link>
       );
     });
   }, [nodes]);

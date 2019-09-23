@@ -1,7 +1,7 @@
 import './index.css';
 
 import React from 'react';
-import Button from '../components/atoms/Button';
+import Link from '../components/atoms/Link';
 
 export default () => (
   <div className={'main-page'}>
@@ -9,13 +9,13 @@ export default () => (
       <img src="/images/profile.png" alt="profile" />
       <p>OPNay</p>
     </div>
-    <Button className={'desc'} href="/Working">
+    <Link className={'desc'} href="/Working">
       🧰 현재 공사중입니다...
-    </Button>
+    </Link>
     <div className={'menu'}>
-      <Button href="https://blog.opnay.com">Tistory</Button>
-      <Button href="blog">Blog</Button>
-      <Button href="https://github.com/opnay">Github</Button>
+      <Link href="https://blog.opnay.com">Tistory</Link>
+      <Link href="blog">Blog</Link>
+      <Link href="https://github.com/opnay">Github</Link>
     </div>
   </div>
 );
