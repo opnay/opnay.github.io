@@ -64,7 +64,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   margin: 16px 0 0;
   border-radius: 8px;
-  width: 240px;
+  width: 320px;
 
   color: white;
   text-align: center;
@@ -78,6 +78,7 @@ body {
   justify-content: center;
 
   margin: 32px 0 0;
+  width: 320px;
 }
 
 .main-page .menu .button {
@@ -86,7 +87,7 @@ body {
   border: 2px solid #000;
   border-radius: 8px;
   padding: 8px;
-  width: 230px;
+  width: 100%;
 
   font-size: 24px;
 }
