@@ -57,7 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.fields.slug,
-      component: _(templates, post.frontmatter.template + '.tsx'),
+      component: _(templates, post.frontmatter.template, 'index.tsx'),
       context: {
         slug: post.fields.slug,
         previous,

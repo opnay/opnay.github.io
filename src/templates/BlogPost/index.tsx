@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { FrontMatterData } from '../types/Markdown';
+import { FrontMatterData } from '../../types/Markdown';
 
 type DefaultProps = {
   data: {
