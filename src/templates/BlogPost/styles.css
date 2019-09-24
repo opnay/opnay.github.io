@@ -1,0 +1,42 @@
+.post {
+  margin: 0 auto;
+  width: 768px;
+}
+
+@media (max-width: 800px) {
+  .post {
+    width: 100%;
+  }
+}
+
+.post > .title {
+  margin: 0 0 0.5em;
+
+  font-size: 1.8em;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+.post > .desc {
+  margin: 0 0 1.5em;
+
+  color: rgba(0, 0, 0, 0.52);
+  line-height: 1;
+}
+
+.post > .article {
+  color: rgba(0, 0, 0, 0.84);
+  line-height: 1.5;
+}
+
+.post > .article a {
+  color: var(--color-primary);
+}
+
+.post > .article p {
+  margin: 0;
+}
+
+.post > .article p:not(:last-child) {
+  margin-bottom: 0.8em;
+}

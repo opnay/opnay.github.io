@@ -1,3 +1,5 @@
+import './styles.css';
+
 import React from 'react';
 import { graphql } from 'gatsby';
 import { FrontMatterData } from '../../types/Markdown';
@@ -16,14 +18,17 @@ export default (props: DefaultProps) => {
   } = props;
 
   return (
-    <div>
-      <h1>{markdownRemark.frontmatter.title}</h1>
-      <p>
+    <div className="post">
+      <h1 className="title">{markdownRemark.frontmatter.title}</h1>
+      <p className="desc">
         <span>{markdownRemark.frontmatter.category}</span>
         {' · '}
         <span>{markdownRemark.frontmatter.date}</span>
       </p>
-      <article dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+      <article
+        className="article"
+        dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+      />
     </div>
   );
 };
