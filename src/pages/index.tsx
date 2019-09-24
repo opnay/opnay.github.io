@@ -3,7 +3,7 @@ import './index.css';
 import React from 'react';
 import Link from '../components/atoms/Link';
 
-export default () => (
+const MainPage = () => (
   <div className={'main-page'}>
     <div className={'profile'}>
       <img src="/images/profile.png" alt="profile" />
@@ -19,3 +19,5 @@ export default () => (
     </div>
   </div>
 );
+
+export default MainPage;

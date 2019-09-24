@@ -4,6 +4,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { AllMarkdownRemarkData } from '../../types/Markdown';
 import Link from '../../components/atoms/Link';
+import { PageProps } from '../../types/gatsby';
 
 type HeaderProps = {
   title?: string;
@@ -21,12 +22,10 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   );
 };
 
-type DefaultProps = {
-  data: {
-    allMarkdownRemark: AllMarkdownRemarkData;
-  };
+type Data = {
+  allMarkdownRemark: AllMarkdownRemarkData;
 };
-export default (props: DefaultProps) => {
+const BlogPage = (props: PageProps<Data>) => {
   const {
     data: {
       allMarkdownRemark: { nodes },
@@ -62,6 +61,7 @@ export default (props: DefaultProps) => {
   );
 };
 
+export default BlogPage;
 export const query = graphql`
   {
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {

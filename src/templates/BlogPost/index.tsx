@@ -3,16 +3,16 @@ import './styles.css';
 import React from 'react';
 import { graphql } from 'gatsby';
 import { FrontMatterData } from '../../types/Markdown';
+import { PageProps } from '../../types/gatsby';
 
-type DefaultProps = {
-  data: {
-    markdownRemark: {
-      html: string;
-      frontmatter: FrontMatterData;
-    };
+type Data = {
+  markdownRemark: {
+    html: string;
+    frontmatter: FrontMatterData;
   };
 };
-export default (props: DefaultProps) => {
+
+const BlogPost = (props: PageProps<Data>) => {
   const {
     data: { markdownRemark },
   } = props;
@@ -33,6 +33,7 @@ export default (props: DefaultProps) => {
   );
 };
 
+export default BlogPost;
 export const query = graphql`
   query Posts($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
