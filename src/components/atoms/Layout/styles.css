@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Color sets */
+body {
+  --color-primary: #f57f17;
+  --color-primary-dark: #bf360c;
+
+  --color-text-dark: rgba(0, 0, 0, 0.84);
+  --color-text-dark-light: rgba(0, 0, 0, 0.64);
+}
