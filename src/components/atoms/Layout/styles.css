@@ -5,9 +5,87 @@ body {
 
 /* Color sets */
 body {
+  --color-dark: #444;
+  --color-dark-light: #888;
+
+  --color-gray: #f0f1f3;
+  --color-gray-secondary: #f6f8fa;
+  --color-gray-light: #ddd;
+
   --color-primary: #f57f17;
   --color-primary-dark: #bf360c;
 
+  --color-white-transparent: rgba(255, 255, 255, 0.84);
+  --color-black-transparent: rgba(0, 0, 0, 0.84);
+  --color-gray-transparent: rgba(0, 0, 0, 0.12);
+
   --color-text-dark: rgba(0, 0, 0, 0.84);
   --color-text-dark-light: rgba(0, 0, 0, 0.64);
+
+  /* Default Color */
+  background: var(--color-gray);
+  color: var(--color-text-dark);
+}
+
+/* Reset for IE */
+fieldset,
+img {
+  border: 0 none;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  max-width: 100%;
+  overflow-x: auto;
+
+  font-weight: normal;
+}
+
+tt,
+code,
+kbd,
+samp {
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+blockquote {
+  margin: 12px 0;
+  border-left: 4px solid var(--color-primary-dark);
+  padding: 16px 18px;
+}
+pre {
+  background: var(--color-gray-secondary);
+  margin: 12px 0;
+  padding: 16px;
+  font-size: 0.9em;
+}
+
+code,
+kbd {
+  font-size: 0.8em;
+}
+
+:not(pre) > code {
+  background: var(--color-gray-transparent);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+hr {
+  border: 2px solid var(--color-dark-light);
+}
+
+ul,
+ol {
+  padding: 0 0 0 32px;
 }
