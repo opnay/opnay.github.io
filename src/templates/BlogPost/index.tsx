@@ -19,19 +19,17 @@ const BlogPost = (props: PageProps<Data>) => {
   } = props;
 
   return (
-    <Layout>
-      <div className="post">
-        <h1 className="title">{markdownRemark.frontmatter.title}</h1>
-        <p className="desc">
-          <span>{markdownRemark.frontmatter.category}</span>
-          {' · '}
-          <span>{markdownRemark.frontmatter.date}</span>
-        </p>
-        <article
-          className="article"
-          dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
-        />
-      </div>
+    <Layout className={'post'}>
+      <h1 className="title">{markdownRemark.frontmatter.title}</h1>
+      <p className="desc">
+        <span>{markdownRemark.frontmatter.category}</span>
+        {' · '}
+        <span>{markdownRemark.frontmatter.date}</span>
+      </p>
+      <article
+        className="article"
+        dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+      />
     </Layout>
   );
 };
