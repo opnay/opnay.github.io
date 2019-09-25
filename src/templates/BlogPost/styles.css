@@ -20,17 +20,13 @@
 .post > .desc {
   margin: 0 0 1.5em;
 
-  color: rgba(0, 0, 0, 0.52);
+  color: var(--color-text-dark-light);
   line-height: 1;
 }
 
 .post > .article {
-  color: rgba(0, 0, 0, 0.84);
+  color: var(--color-text-dark);
   line-height: 1.5;
-}
-
-.post > .article a {
-  color: var(--color-primary);
 }
 
 .post > .article p {
