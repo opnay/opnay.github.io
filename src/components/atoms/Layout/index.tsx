@@ -1,4 +1,5 @@
 import './styles.css';
+import './prism.css';
 
 import React, { useMemo } from 'react';
 
