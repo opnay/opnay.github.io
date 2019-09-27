@@ -9,30 +9,80 @@
   }
 }
 
-.post > .title {
+.post .card {
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.post .card > .title {
   margin: 0 0 0.5em;
+  padding: 0 24px;
 
   font-size: 1.8em;
   font-weight: normal;
   line-height: 1.25;
 }
 
-.post > .desc {
+.post .card > .desc {
   margin: 0 0 1.5em;
+  padding: 0 24px;
 
   color: var(--color-text-dark-light);
   line-height: 1;
 }
 
-.post > .article {
+.post .card > .article {
   color: var(--color-text-dark);
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
-.post > .article p {
+@media (max-width: 800px) {
+  .post .card > .title {
+    font-size: 1.4em;
+  }
+
+  .post .card > .desc {
+    font-size: 0.8em;
+  }
+
+  .post .card > .article {
+    font-size: 0.9em;
+  }
+}
+.post .card > .article p {
   margin: 0;
 }
 
-.post > .article p:not(:last-child) {
-  margin-bottom: 0.8em;
+.post .card > .article > p {
+  margin: 16px 0;
+  padding: 0 24px;
+}
+
+.post .card > .article > h1,
+.post .card > .article > h2,
+.post .card > .article > h3,
+.post .card > .article > h4,
+.post .card > .article > h5,
+.post .card > .article > h6 {
+  padding: 0 24px;
+}
+
+.post .card > .article blockquote {
+  margin: 16px 0;
+}
+.post .card > .article > blockquote {
+  margin: 18px 24px;
+}
+
+.post .card > .article blockquote > :first-child {
+  margin-top: 0;
+}
+
+.post .card > .article blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.post .card > .article > ul,
+.post .card > .article > ol {
+  padding: 0 42px;
 }
