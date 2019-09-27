@@ -61,13 +61,14 @@ samp {
 blockquote {
   margin: 12px 0;
   border-left: 4px solid var(--color-primary-dark);
-  padding: 16px 18px;
+  padding: 12px 18px;
 }
 pre {
   background: var(--color-gray-secondary);
   margin: 12px 0;
   padding: 16px;
   font-size: 0.9em;
+  overflow: auto;
 }
 
 code,
@@ -82,10 +83,15 @@ kbd {
 }
 
 hr {
-  border: 2px solid var(--color-dark-light);
+  margin: 24px 0;
+  border: 2px solid var(--color-gray-transparent);
 }
 
 ul,
 ol {
   padding: 0 0 0 32px;
+}
+
+li {
+  line-height: 1.75;
 }
