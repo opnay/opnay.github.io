@@ -23,7 +23,7 @@ module.exports = {
               rel: 'nofollow noopener noreferrer',
             },
           },
-          // 'gatsby-remark-prismjs',
+          'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
         ],
       },
