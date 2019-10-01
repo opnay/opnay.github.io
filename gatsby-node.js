@@ -19,7 +19,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const templates = _('src/templates');
+  const templates = _('src/components/templates');
   const result = await graphql(
     `
       {

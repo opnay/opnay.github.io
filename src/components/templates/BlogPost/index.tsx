@@ -2,10 +2,10 @@ import './styles.css';
 
 import React from 'react';
 import { graphql } from 'gatsby';
-import { FrontMatterData } from '../../types/Markdown';
-import { PageProps } from '../../types/gatsby';
-import Card from '../../components/atoms/Card';
-import BlogLayout from '../../components/templates/BlogLayout';
+import { FrontMatterData } from '../../../types/Markdown';
+import { PageProps } from '../../../types/gatsby';
+import Card from '../../atoms/Card';
+import BlogLayout from '../BlogLayout';
 
 type Data = {
   markdownRemark: {
