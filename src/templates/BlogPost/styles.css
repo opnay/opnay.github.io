@@ -1,12 +1,5 @@
-.post {
-  margin: 0 auto;
-  width: 768px;
-}
-
-@media (max-width: 800px) {
-  .post {
-    width: 100%;
-  }
+.layout.post > .blog-header {
+  margin: 0 0 16px;
 }
 
 .post .card {

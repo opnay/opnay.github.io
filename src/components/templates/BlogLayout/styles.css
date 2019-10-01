@@ -1,0 +1,15 @@
+.blog {
+  margin: 0 auto;
+  padding: 24px 0 32px;
+  width: 768px;
+}
+
+@media (max-width: 800px) {
+  .blog {
+    width: 100%;
+  }
+}
+
+.blog > .blog-header:not(:last-child) {
+  margin: 0 0 32px;
+}

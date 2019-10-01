@@ -5,22 +5,7 @@ import { graphql } from 'gatsby';
 import { AllMarkdownRemarkData } from '../../types/Markdown';
 import Link from '../../components/atoms/Link';
 import { PageProps } from '../../types/gatsby';
-
-type HeaderProps = {
-  title?: string;
-};
-const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
-  const { title = 'Blog' } = props;
-
-  return (
-    <div className={'header'}>
-      <div className={'content'}>
-        <img className={'profile'} src="/images/profile.png" alt="Profile" />
-        <h1>{title}</h1>
-      </div>
-    </div>
-  );
-};
+import BlogLayout from '../../components/templates/BlogLayout';
 
 type Data = {
   allMarkdownRemark: AllMarkdownRemarkData;
@@ -54,10 +39,9 @@ const BlogPage = (props: PageProps<Data>) => {
   }, [nodes]);
 
   return (
-    <div className={'blog'}>
-      <Header />
+    <BlogLayout>
       <div className={'content'}>{list}</div>
-    </div>
+    </BlogLayout>
   );
 };
 

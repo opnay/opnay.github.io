@@ -1,0 +1,42 @@
+.blog-header {
+  background: rgba(0, 0, 0, 0.5);
+
+  border-radius: 8px;
+  padding: 28px 32px;
+  width: 100%;
+  box-sizing: border-box;
+
+  color: white;
+}
+
+.blog-header .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.blog-header .profile {
+  flex: 1;
+
+  font-size: 1.4em;
+}
+
+.blog-header .profile img {
+  margin: 0 24px 0 0;
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.blog-header .shortcut a + a {
+  margin: 0 0 0 24px;
+}
+
+.blog-header .shortcut img {
+  width: 24px;
+  height: 24px;
+}

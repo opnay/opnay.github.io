@@ -4,8 +4,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { FrontMatterData } from '../../types/Markdown';
 import { PageProps } from '../../types/gatsby';
-import Layout from '../../components/atoms/Layout';
 import Card from '../../components/atoms/Card';
+import BlogLayout from '../../components/templates/BlogLayout';
 
 type Data = {
   markdownRemark: {
@@ -20,7 +20,7 @@ const BlogPost = (props: PageProps<Data>) => {
   } = props;
 
   return (
-    <Layout className={'post'}>
+    <BlogLayout className={'post'}>
       <Card>
         <h1 className="title">{markdownRemark.frontmatter.title}</h1>
         <p className="desc">
@@ -33,7 +33,7 @@ const BlogPost = (props: PageProps<Data>) => {
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
         />
       </Card>
-    </Layout>
+    </BlogLayout>
   );
 };
 
