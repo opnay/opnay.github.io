@@ -1,26 +1,28 @@
-.blog > .content > .button {
+.blog > .content > .link {
   display: block;
   padding: 24px 18px;
   width: 100%;
+  box-sizing: border-box;
+
   text-align: left;
 }
 
-.blog > .content > .button + .button {
+.blog > .content > .link + .link {
   border-top: 1px solid #ddd;
 }
 
-.blog > .content > .button p {
+.blog > .content > .link p {
   margin: 0;
 }
 
-.blog > .content > .button span {
+.blog > .content > .link span {
   font-size: 0.8em;
 }
 
-.blog > .content > .button:hover span {
+.blog > .content > .link:hover span {
   text-decoration: none;
 }
 
-.blog > .content > .button .category {
+.blog > .content > .link .category {
   color: var(--color-primary);
 }

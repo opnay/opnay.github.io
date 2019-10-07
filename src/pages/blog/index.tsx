@@ -6,6 +6,7 @@ import { AllMarkdownRemarkData } from '../../types/Markdown';
 import Link from '../../components/atoms/Link';
 import { PageProps } from '../../types/gatsby';
 import BlogLayout from '../../components/templates/BlogLayout';
+import Card from '../../components/atoms/Card';
 
 type Data = {
   allMarkdownRemark: AllMarkdownRemarkData;
@@ -24,7 +25,6 @@ const BlogPage = (props: PageProps<Data>) => {
 
     return nodes.map((i) => {
       const slug = i.fields.slug;
-      console.log(i);
 
       return (
         <Link key={slug} href={slug}>
@@ -40,7 +40,7 @@ const BlogPage = (props: PageProps<Data>) => {
 
   return (
     <BlogLayout>
-      <div className={'content'}>{list}</div>
+      <Card className={'content'}>{list}</Card>
     </BlogLayout>
   );
 };
