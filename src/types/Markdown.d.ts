@@ -11,6 +11,7 @@ export type SlugData = {
 };
 
 export type FrontMatterData = {
+  thumb: string;
   category: string;
   date: string;
   tags: string[];
