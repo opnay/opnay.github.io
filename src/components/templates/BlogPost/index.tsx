@@ -6,6 +6,7 @@ import { FrontMatterData } from '../../../types/Markdown';
 import { PageProps } from '../../../types/gatsby';
 import Card from '../../atoms/Card';
 import BlogLayout from '../BlogLayout';
+import Disqus from '../../atoms/Disqus';
 
 type Data = {
   markdownRemark: {
@@ -32,6 +33,7 @@ const BlogPost = (props: PageProps<Data>) => {
           className="article"
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
         />
+        <Disqus />
       </Card>
     </BlogLayout>
   );

@@ -1,0 +1,10 @@
+#disqus_thread {
+  margin: 16px 0 0 0;
+  border-top: 1px solid #ddd;
+  padding: 16px 24px 0;
+  box-sizing: border-box;
+}
+
+#disqus_thread:empty::before {
+  content: 'Loading Disqus!!';
+}
