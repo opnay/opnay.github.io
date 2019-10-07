@@ -1,5 +1,5 @@
-.blog > .content > .link {
-  display: block;
+.blog > .content > .item {
+  display: flex;
   padding: 24px 18px;
   width: 100%;
   box-sizing: border-box;
@@ -7,22 +7,32 @@
   text-align: left;
 }
 
-.blog > .content > .link + .link {
+.blog > .content > .item + .item {
   border-top: 1px solid #ddd;
 }
 
-.blog > .content > .link p {
-  margin: 0;
+.blog > .content > .item .thumb {
+  margin: 0 16px 0 0;
+  border-radius: 50%;
+  width: 84px;
+  height: 84px;
 }
 
-.blog > .content > .link span {
+.blog > .content > .item > .info {
+  flex: 1;
+  margin: auto 0;
+}
+
+.blog > .content > .item h2 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.blog > .content > .item span {
   font-size: 0.8em;
 }
 
-.blog > .content > .link:hover span {
-  text-decoration: none;
-}
-
-.blog > .content > .link .category {
+.blog > .content > .item .category {
   color: var(--color-primary);
 }

@@ -27,13 +27,27 @@ const BlogPage = (props: PageProps<Data>) => {
       const slug = i.fields.slug;
 
       return (
-        <Link key={slug} href={slug}>
-          <p>{i.frontmatter.title}</p>
-          <div>
-            <span>{i.frontmatter.category}</span>·
-            <span>{i.frontmatter.date}</span>
+        <div key={slug} className={'item'}>
+          {i.frontmatter.thumb !== '' && (
+            <Link href={slug}>
+              <img
+                className={'thumb'}
+                src={i.frontmatter.thumb}
+                alt={'thumbnail'}
+              />
+            </Link>
+          )}
+          <div className={'info'}>
+            <Link href={slug}>
+              <h2>{i.frontmatter.title}</h2>
+            </Link>
+            <div>
+              <Link className={'category'}>{i.frontmatter.category}</Link>
+              {' · '}
+              <span>{i.frontmatter.date}</span>
+            </div>
           </div>
-        </Link>
+        </div>
       );
     });
   }, [nodes]);
@@ -51,6 +65,7 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
+          thumb
           category
           date(formatString: "YYYY.MM.DD")
           title
