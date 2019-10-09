@@ -1,18 +1,18 @@
 import './styles.css';
 
-import React from 'react';
+import React, { useContext } from 'react';
 import Link from '../../atoms/Link';
+import { BlogContext } from '../../../utils/context/BlogContext';
 
-type Props = {
-  title?: string;
-};
+type Props = {};
 const BlogHeader: React.FC<Props> = (props) => {
-  const { title = 'Blog' } = props;
+  const {} = props;
+  const [{ title, src }] = useContext(BlogContext);
 
   return (
     <div className={'blog-header'}>
       <div className={'content'}>
-        <Link href={'/'} className={'profile'}>
+        <Link href={src} className={'profile'}>
           <img src="/images/profile.png" alt="Profile" />
           <span className={'name'}>{title}</span>
         </Link>
