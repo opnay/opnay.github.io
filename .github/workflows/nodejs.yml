@@ -15,6 +15,10 @@ jobs:
       with:
         submodules: true
 
+    - name: Before Configure
+      run: |
+        chmod a+x ./.github/scripts/*.sh
+
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
@@ -30,9 +34,7 @@ jobs:
       run: yarn build
 
     - name: Push to master
-      run: |
-        chmod a+x ./.github/scripts/*.sh
-        ./.github/scripts/push.sh
+      run: ./.github/scripts/deploy.sh
       env:
         BUILD_DIR: public
         CNAME: opnay.com
