@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      with:
+        submodules: true
       
     - name: Use Node.js
       uses: actions/setup-node@v1
@@ -32,6 +34,8 @@ jobs:
     
     steps:
       - uses: actions/checkout@v1
+        with:
+          submodules: true
         
       - name: Configure git
         run: |
