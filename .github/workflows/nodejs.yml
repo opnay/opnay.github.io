@@ -1,0 +1,41 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches:
+      - gatsby
+      - gatsby-action
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Before Configure
+      run: |
+        chmod a+x ./.github/scripts/*.sh
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    - name: Install Yarn
+      run: npm install -g yarn
+
+    - name: Install Packages
+      run: yarn
+
+    - name: Build Gatsby 
+      run: yarn build
+
+    - name: Push to master
+      run: ./.github/scripts/deploy.sh
+      env:
+        BUILD_DIR: public
+        CNAME: opnay.com
+        TOKEN: ${{ secrets.TOKEN }}
