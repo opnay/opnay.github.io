@@ -2,10 +2,12 @@
 
 set -e
 
+echo "=========="
 echo "Move to 'BUILD_DIR'"
 echo "- $BUILD_DIR"
 cd $BUILD_DIR
 
+echo "=========="
 echo "Git config"
 REPO_URI="https://${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
@@ -17,11 +19,13 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
+echo "=========="
 echo "Fetch and soft checkout"
 git remote add origin $REPO_URI && \
 git fetch origin && \
-git reset --soft origin/$REMOTE_BRANCH
+git reset --soft origin/master
 
+echo "=========="
 echo "Commit files"
 git add . && \
 git commit -m 'Deploy to GitHub Pages' && \
@@ -29,4 +33,5 @@ git push origin master && \
 rm -fr .git && \
 cd $GITHUB_WORKSPACE
 
-echo "Deployed Files"
+echo "=========="
+echo "Done"
