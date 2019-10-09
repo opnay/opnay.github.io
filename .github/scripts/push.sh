@@ -7,7 +7,7 @@ echo "- $BUILD_DIR"
 cd $BUILD_DIR
 
 echo "Git config"
-REPO_URI="https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git"
+REPO_URI="https://${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
 git init && \
 git config user.name "${GITHUB_ACTOR}" && \
