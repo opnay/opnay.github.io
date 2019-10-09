@@ -1,5 +1,10 @@
 #!/bin/sh
 
+###
+# Origin script
+# https://github.com/maxheld83/ghpages/blob/master/entrypoint.sh
+###
+
 # REQUIRE ENV
 # - BUILD_DIR
 # - TOKEN (Github Personal Access Token)
