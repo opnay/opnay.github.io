@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# REQUIRE ENV
+# - BUILD_DIR
+# - TOKEN (Github Personal Access Token)
+# - CNAME
+
 set -e
 
 echo "=========="
@@ -27,6 +32,7 @@ git reset --soft origin/master
 
 echo "=========="
 echo "Commit files"
+echo $CNAME > ./CNAME
 git add . && \
 git commit -m 'Deploy to GitHub Pages' && \
 git push origin master && \
