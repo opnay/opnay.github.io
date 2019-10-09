@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /404.html
-Disallow: /about
-
-Sitemap: https://opnay.com/sitemap.xml
