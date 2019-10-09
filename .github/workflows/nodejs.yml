@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - gatsby
+      - gatsby-action
 
 jobs:
   initial:
