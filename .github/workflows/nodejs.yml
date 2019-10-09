@@ -1,4 +1,4 @@
-name: Node CI
+name: Deploy Blog
 
 on:
   push:
@@ -29,7 +29,10 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     needs: Build
+    
     steps:
+      - uses: actions/checkout@v1
+        
       - name: Configure git
         run: |
           export HEAD_H=$(git rev-parse HEAD)
@@ -38,11 +41,13 @@ jobs:
           git remote add origin $(GITHUB_REPOSITORY)
           git fetch origin
           git reset --soft origin/master
+          
       - name: Commit Update
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Github Action"
           git commit -m "Published $(HEAD_H)"
+          
       - name: Push to master
         uses: ad-m/github-push-action@master
         with:
