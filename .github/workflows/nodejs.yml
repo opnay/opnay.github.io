@@ -24,7 +24,7 @@ jobs:
         CI: true
         
     - name: Build Gatsby 
-      run: npm build
+      run: npm run build
   
   Deploy:
     runs-on: ubuntu-latest
