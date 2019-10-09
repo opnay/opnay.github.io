@@ -28,22 +28,8 @@ jobs:
     - name: Build Gatsby 
       run: npm run build
         
-    - name: Configure git
-      run: |
-        export HEAD_H=$(git rev-parse HEAD)
-        cd public
-        git init
-        git remote add origin $GITHUB_REPOSITORY
-        git fetch origin
-        git reset --soft origin/master
-
-    - name: Commit Update
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "Github Action"
-        git commit -m "Published $HEAD_H"
-
     - name: Push to master
-      uses: ad-m/github-push-action@master
+      uses: maxheld83/ghpages@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }} 
+        BUILD_DIR: public
+        GH_PAT: ${{ secrets.GITHUB_TOKEN }}
