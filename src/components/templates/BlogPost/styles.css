@@ -78,3 +78,8 @@
 .post .card > .article > ol {
   padding: 0 42px;
 }
+
+.post .card > .article img {
+  max-width: 100%;
+  height: auto;
+}
