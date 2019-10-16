@@ -32,6 +32,8 @@ jobs:
 
     - name: Build Gatsby 
       run: yarn build
+      env:
+        TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
     - name: Push to master
       run: ./.github/scripts/deploy.sh
