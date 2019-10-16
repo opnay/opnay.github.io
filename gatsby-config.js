@@ -3,6 +3,8 @@ const path = require('path');
 const projectDir = fs.realpathSync(process.cwd());
 const _ = (relPath) => path.resolve(projectDir, relPath);
 
+require('dotenv').config();
+
 module.exports = {
   plugins: [
     {
@@ -39,6 +41,12 @@ module.exports = {
       resolve: `gatsby-plugin-eslint`,
       options: {
         test: /\.jsx?$|\.tsx?$/,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.TRACKING_ID || '',
       },
     },
   ],
