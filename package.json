@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@types/react-helmet": "^5.0.14",
     "dotenv": "^8.2.0",
     "gatsby": "^2.13.64",
     "gatsby-plugin-eslint": "^2.0.5",
@@ -25,7 +26,8 @@
     "gatsby-transformer-remark": "^2.6.19",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.1",
