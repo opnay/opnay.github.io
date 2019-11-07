@@ -7,9 +7,10 @@ import { PageProps } from '../../../types/gatsby';
 import Card from '../../atoms/Card';
 import BlogLayout from '../BlogLayout';
 import Disqus from '../../atoms/Disqus';
-import SEO from '../../atoms/SEO';
+import { Location } from '@reach/router';
 
 type Data = {
+  location: Location;
   markdownRemark: {
     html: string;
     frontmatter: FrontMatterData;
@@ -17,14 +18,17 @@ type Data = {
 };
 
 const BlogPost = (props: PageProps<Data>) => {
-  const {
-    data: { markdownRemark },
-  } = props;
+  const { location, data } = props;
+  const { markdownRemark } = data;
   const { title, category, date } = markdownRemark.frontmatter;
 
   return (
-    <BlogLayout className={'post'}>
-      <SEO title={title} article={markdownRemark.html} />
+    <BlogLayout
+      className={'post'}
+      title={title}
+      article={markdownRemark.html}
+      pathname={location.pathname}
+    >
       <Card>
         <h1 className="title">{title}</h1>
         <p className="desc">
