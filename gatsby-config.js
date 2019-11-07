@@ -6,6 +6,14 @@ const _ = (relPath) => path.resolve(projectDir, relPath);
 require('dotenv').config();
 
 module.exports = {
+  siteMetadata: {
+    title: 'Dev Blog',
+    titleTemplate: 'Dev Blog · %s',
+    description: `OPNay's develop blog`,
+    url: 'https://opnay.com',
+    image: '/images/open-graph.png',
+    twitterUsername: '@opnay_dev',
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
