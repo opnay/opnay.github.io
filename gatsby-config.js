@@ -7,6 +7,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://opnay.com',
+
+    // Open Graph
     title: 'Dev Blog',
     titleTemplate: 'Dev Blog · %s',
     description: `OPNay's develop blog`,
@@ -56,6 +59,36 @@ module.exports = {
       options: {
         trackingId: process.env.TRACKING_ID || '',
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: '/sitemap.xml',
+      },
+      query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`,
+      serialize: ({ site, allSitePage }) =>
+        allSitePage.edges.map((edge) => {
+          return {
+            url: site.siteMetadata.siteUrl + edge.node.path,
+            changefreq: `daily`,
+            priority: 0.7,
+          };
+        }),
     },
   ],
 };
