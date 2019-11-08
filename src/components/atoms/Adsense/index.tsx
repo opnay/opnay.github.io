@@ -19,7 +19,7 @@ const Adsense: React.FC<Props> = () => {
     }
   }, []);
 
-  return <ReactAdsense.Google client="ca-pub-2339446308971759" />;
+  return <ReactAdsense.Google client="ca-pub-2339446308971759" slot="5727311856" responsive={true} format="horizontal"/>;
 };
 
 export default Adsense;
