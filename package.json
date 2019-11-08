@@ -13,7 +13,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@types/react-helmet": "^5.0.14",
     "dotenv": "^8.2.0",
     "gatsby": "^2.13.64",
     "gatsby-plugin-eslint": "^2.0.5",
@@ -33,6 +32,7 @@
   "devDependencies": {
     "@types/react": "^16.9.1",
     "@types/react-dom": "^16.8.5",
+    "@types/react-helmet": "^5.0.14",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
     "eslint-config-prettier": "^6.1.0",
