@@ -8,6 +8,7 @@ import Card from '../../atoms/Card';
 import BlogLayout from '../BlogLayout';
 import Disqus from '../../atoms/Disqus';
 import { Location } from '@reach/router';
+import Adsense from '../../atoms/Adsense';
 
 type Data = {
   location: Location;
@@ -40,6 +41,9 @@ const BlogPost = (props: PageProps<Data>) => {
           className="article"
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
         />
+        <div className={'adsense'}>
+          <Adsense />
+        </div>
         <Disqus />
       </Card>
     </BlogLayout>
