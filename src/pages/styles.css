@@ -28,7 +28,7 @@
 }
 
 .main-page::before {
-  background-image: url('/images/debby-hudson-FsrRDNVBS2Y-unsplash.jpg');
+  background-image: url('/images/debby-hudson-FsrRDNVBS2Y-unsplash.webp');
   background-position: center;
   background-size: cover;
   filter: blur(8px);
